@@ -7,12 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4C53843FAD837EE3C0A32E /* Pods_ListkoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244610A184783C61460B201E /* Pods_ListkoTests.framework */; };
+		DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD4120459CA40029C3A3 /* AppInitWorker.swift */; };
+		DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DBD612045A5870029C3A3 /* GoogleService-Info-dev.plist */; };
+		DB1DBD642045A5A90029C3A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DBD632045A5A90029C3A3 /* GoogleService-Info.plist */; };
+		DB1DBD672045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD662045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift */; };
+		DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1DBD682046AEB60029C3A3 /* ListCell.xib */; };
+		DB1DBD6B2046AED20029C3A3 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD6A2046AED20029C3A3 /* ListCell.swift */; };
+		DB1DBD702046B15C0029C3A3 /* ListkoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD6F2046B15C0029C3A3 /* ListkoApi.swift */; };
+		DB1DBD732046B2770029C3A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD722046B2770029C3A3 /* Constants.swift */; };
+		DB1DBD762046B3460029C3A3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD752046B3460029C3A3 /* App.swift */; };
+		DB1DBD782046C9770029C3A3 /* MyAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD772046C9770029C3A3 /* MyAlamofireManager.swift */; };
+		DB1DBD7B2046C98E0029C3A3 /* JsonWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD792046C98E0029C3A3 /* JsonWorker.swift */; };
+		DB1DBD7C2046C98E0029C3A3 /* MyMoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD7A2046C98E0029C3A3 /* MyMoyaPlugin.swift */; };
+		DB1DC4DC2046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4D82046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift */; };
+		DB1DC4DD2046CAC30029C3A3 /* FirebaseEventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4D92046CAC30029C3A3 /* FirebaseEventLogger.swift */; };
+		DB1DC4DE2046CAC30029C3A3 /* LogEventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4DA2046CAC30029C3A3 /* LogEventHelper.swift */; };
+		DB1DC4DF2046CAC30029C3A3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4DB2046CAC30029C3A3 /* Logger.swift */; };
+		DB1DC4E12046CB000029C3A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4E02046CB000029C3A3 /* AppError.swift */; };
+		DB1DC4E42046CCB90029C3A3 /* JsonDecodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4E32046CCB90029C3A3 /* JsonDecodableProtocol.swift */; };
+		DB1DC4E62046CDFE0029C3A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4E52046CDFE0029C3A3 /* User.swift */; };
+		DB1DC4EC2046DB180029C3A3 /* DemiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4EB2046DB180029C3A3 /* DemiLabel.swift */; };
+		DB1DC4EE2046DB300029C3A3 /* DemiDarkGrayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4ED2046DB300029C3A3 /* DemiDarkGrayLabel.swift */; };
+		DB1DC4F02046DB510029C3A3 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4EF2046DB510029C3A3 /* ColorUtil.swift */; };
+		DB1DC4F32046DBA30029C3A3 /* RegularGrayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */; };
+		DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F22046DBA30029C3A3 /* RegularLabel.swift */; };
+		DB1DC4F62046DC500029C3A3 /* ListItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */; };
 		DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BAE203C1D6900A9831A /* AppDelegate.swift */; };
-		DBC62BB1203C1D6900A9831A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BB0203C1D6900A9831A /* ViewController.swift */; };
+		DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BB0203C1D6900A9831A /* ParentViewController.swift */; };
 		DBC62BB4203C1D6900A9831A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC62BB2203C1D6900A9831A /* Main.storyboard */; };
 		DBC62BB6203C1D6900A9831A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC62BB5203C1D6900A9831A /* Assets.xcassets */; };
 		DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC62BB7203C1D6900A9831A /* LaunchScreen.storyboard */; };
 		DBC62BC4203C1D6900A9831A /* ListkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BC3203C1D6900A9831A /* ListkoTests.swift */; };
+		DBC62BD6203C1DC200A9831A /* ListItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD0203C1DC200A9831A /* ListItemsPresenter.swift */; };
+		DBC62BD7203C1DC200A9831A /* ListItemsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD1203C1DC200A9831A /* ListItemsWorker.swift */; };
+		DBC62BD8203C1DC200A9831A /* ListItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD2203C1DC200A9831A /* ListItemsRouter.swift */; };
+		DBC62BD9203C1DC200A9831A /* ListItemsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD3203C1DC200A9831A /* ListItemsModels.swift */; };
+		DBC62BDA203C1DC200A9831A /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD4203C1DC200A9831A /* ListItemsViewController.swift */; };
+		DBC62BDB203C1DC200A9831A /* ListItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD5203C1DC200A9831A /* ListItemsInteractor.swift */; };
+		DBC62BEE203C2B2C00A9831A /* ListItemsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BEA203C2B2C00A9831A /* ListItemsViewControllerTests.swift */; };
+		DBC62BEF203C2B2C00A9831A /* ListItemsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BEB203C2B2C00A9831A /* ListItemsInteractorTests.swift */; };
+		DBC62BF0203C2B2C00A9831A /* ListItemsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BEC203C2B2C00A9831A /* ListItemsWorkerTests.swift */; };
+		DBC62BF1203C2B2C00A9831A /* ListItemsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BED203C2B2C00A9831A /* ListItemsPresenterTests.swift */; };
+		DBC62BF3203C3E5900A9831A /* ListItemsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */; };
+		FA898DDF312C39E3DB9FF0F3 /* Pods_Listko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +64,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DBC62BAB203C1D6900A9831A /* Listko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		244610A184783C61460B201E /* Pods_ListkoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListkoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCD65A83E52DCA2BC9EB745 /* Pods-Listko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listko.release.xcconfig"; path = "Pods/Target Support Files/Pods-Listko/Pods-Listko.release.xcconfig"; sourceTree = "<group>"; };
+		64406098D89864FC73B6A9A8 /* Pods-Listko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Listko/Pods-Listko.debug.xcconfig"; sourceTree = "<group>"; };
+		A93E79F4CE5080D62AF628EB /* Pods-ListkoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListkoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B868D308604E3D60D516C250 /* Pods-ListkoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListkoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1DBD2E203EE1E40029C3A3 /* Listko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listko-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB1DBD4120459CA40029C3A3 /* AppInitWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitWorker.swift; sourceTree = "<group>"; };
+		DB1DBD612045A5870029C3A3 /* GoogleService-Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dev.plist"; sourceTree = "<group>"; };
+		DB1DBD632045A5A90029C3A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB1DBD652045A5E00029C3A3 /* Listko.dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Listko.dev.entitlements; sourceTree = "<group>"; };
+		DB1DBD662045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerificationWorker.swift; sourceTree = "<group>"; };
+		DB1DBD682046AEB60029C3A3 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		DB1DBD6A2046AED20029C3A3 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		DB1DBD6F2046B15C0029C3A3 /* ListkoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListkoApi.swift; sourceTree = "<group>"; };
+		DB1DBD722046B2770029C3A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB1DBD752046B3460029C3A3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		DB1DBD772046C9770029C3A3 /* MyAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlamofireManager.swift; sourceTree = "<group>"; };
+		DB1DBD792046C98E0029C3A3 /* JsonWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonWorker.swift; sourceTree = "<group>"; };
+		DB1DBD7A2046C98E0029C3A3 /* MyMoyaPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoyaPlugin.swift; sourceTree = "<group>"; };
+		DB1DC4D82046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticsExceptionLogger.swift; sourceTree = "<group>"; };
+		DB1DC4D92046CAC30029C3A3 /* FirebaseEventLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseEventLogger.swift; sourceTree = "<group>"; };
+		DB1DC4DA2046CAC30029C3A3 /* LogEventHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEventHelper.swift; sourceTree = "<group>"; };
+		DB1DC4DB2046CAC30029C3A3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DB1DC4E02046CB000029C3A3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		DB1DC4E32046CCB90029C3A3 /* JsonDecodableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecodableProtocol.swift; sourceTree = "<group>"; };
+		DB1DC4E52046CDFE0029C3A3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB1DC4EB2046DB180029C3A3 /* DemiLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemiLabel.swift; sourceTree = "<group>"; };
+		DB1DC4ED2046DB300029C3A3 /* DemiDarkGrayLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemiDarkGrayLabel.swift; sourceTree = "<group>"; };
+		DB1DC4EF2046DB510029C3A3 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularGrayLabel.swift; sourceTree = "<group>"; };
+		DB1DC4F22046DBA30029C3A3 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
+		DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsExtension.swift; sourceTree = "<group>"; };
+		DBC62BAB203C1D6900A9831A /* Listko.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listko.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC62BAE203C1D6900A9831A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBC62BB0203C1D6900A9831A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBC62BB0203C1D6900A9831A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		DBC62BB3203C1D6900A9831A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBC62BB5203C1D6900A9831A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC62BB8203C1D6900A9831A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +107,17 @@
 		DBC62BBF203C1D6900A9831A /* ListkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC62BC3203C1D6900A9831A /* ListkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListkoTests.swift; sourceTree = "<group>"; };
 		DBC62BC5203C1D6900A9831A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC62BD0203C1DC200A9831A /* ListItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsPresenter.swift; sourceTree = "<group>"; };
+		DBC62BD1203C1DC200A9831A /* ListItemsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsWorker.swift; sourceTree = "<group>"; };
+		DBC62BD2203C1DC200A9831A /* ListItemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsRouter.swift; sourceTree = "<group>"; };
+		DBC62BD3203C1DC200A9831A /* ListItemsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsModels.swift; sourceTree = "<group>"; };
+		DBC62BD4203C1DC200A9831A /* ListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
+		DBC62BD5203C1DC200A9831A /* ListItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsInteractor.swift; sourceTree = "<group>"; };
+		DBC62BEA203C2B2C00A9831A /* ListItemsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewControllerTests.swift; sourceTree = "<group>"; };
+		DBC62BEB203C2B2C00A9831A /* ListItemsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsInteractorTests.swift; sourceTree = "<group>"; };
+		DBC62BEC203C2B2C00A9831A /* ListItemsWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsWorkerTests.swift; sourceTree = "<group>"; };
+		DBC62BED203C2B2C00A9831A /* ListItemsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsPresenterTests.swift; sourceTree = "<group>"; };
+		DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA898DDF312C39E3DB9FF0F3 /* Pods_Listko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,25 +133,158 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4C53843FAD837EE3C0A32E /* Pods_ListkoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1A0C7470BDD8172C294807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64406098D89864FC73B6A9A8 /* Pods-Listko.debug.xcconfig */,
+				5CCD65A83E52DCA2BC9EB745 /* Pods-Listko.release.xcconfig */,
+				B868D308604E3D60D516C250 /* Pods-ListkoTests.debug.xcconfig */,
+				A93E79F4CE5080D62AF628EB /* Pods-ListkoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB1DBD3B20459AFA0029C3A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC62BB0203C1D6900A9831A /* ParentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB1DBD3C20459B1C0029C3A3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD6D2046AEE60029C3A3 /* ListCell */,
+				DBC62BB2203C1D6900A9831A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DB1DBD3D20459BA70029C3A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD652045A5E00029C3A3 /* Listko.dev.entitlements */,
+				DB1DBD632045A5A90029C3A3 /* GoogleService-Info.plist */,
+				DB1DBD612045A5870029C3A3 /* GoogleService-Info-dev.plist */,
+				DBC62BB7203C1D6900A9831A /* LaunchScreen.storyboard */,
+				DBC62BB5203C1D6900A9831A /* Assets.xcassets */,
+				DBC62BBA203C1D6900A9831A /* Info.plist */,
+				DB1DBD2E203EE1E40029C3A3 /* Listko-Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DB1DBD4020459C8E0029C3A3 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD4120459CA40029C3A3 /* AppInitWorker.swift */,
+				DB1DBD662045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		DB1DBD6D2046AEE60029C3A3 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD682046AEB60029C3A3 /* ListCell.xib */,
+				DB1DBD6A2046AED20029C3A3 /* ListCell.swift */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		DB1DBD6E2046B1290029C3A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD6F2046B15C0029C3A3 /* ListkoApi.swift */,
+				DB1DBD772046C9770029C3A3 /* MyAlamofireManager.swift */,
+				DB1DBD792046C98E0029C3A3 /* JsonWorker.swift */,
+				DB1DBD7A2046C98E0029C3A3 /* MyMoyaPlugin.swift */,
+				DB1DC4E32046CCB90029C3A3 /* JsonDecodableProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB1DBD712046B2660029C3A3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4D72046CABA0029C3A3 /* Logger */,
+				DB1DBD722046B2770029C3A3 /* Constants.swift */,
+				DB1DC4EF2046DB510029C3A3 /* ColorUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DB1DBD742046B3200029C3A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DBD752046B3460029C3A3 /* App.swift */,
+				DBC62BAE203C1D6900A9831A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DB1DC4D72046CABA0029C3A3 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4DB2046CAC30029C3A3 /* Logger.swift */,
+				DB1DC4D82046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift */,
+				DB1DC4D92046CAC30029C3A3 /* FirebaseEventLogger.swift */,
+				DB1DC4DA2046CAC30029C3A3 /* LogEventHelper.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		DB1DC4E22046CB040029C3A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4E02046CB000029C3A3 /* AppError.swift */,
+				DB1DC4E52046CDFE0029C3A3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB1DC4E92046DAD30029C3A3 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4EA2046DAF70029C3A3 /* UILabel */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		DB1DC4EA2046DAF70029C3A3 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4EB2046DB180029C3A3 /* DemiLabel.swift */,
+				DB1DC4ED2046DB300029C3A3 /* DemiDarkGrayLabel.swift */,
+				DB1DC4F22046DBA30029C3A3 /* RegularLabel.swift */,
+				DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		DBC62BA2203C1D6900A9831A = {
 			isa = PBXGroup;
 			children = (
 				DBC62BAD203C1D6900A9831A /* Listko */,
 				DBC62BC2203C1D6900A9831A /* ListkoTests */,
 				DBC62BAC203C1D6900A9831A /* Products */,
+				CE1A0C7470BDD8172C294807 /* Pods */,
+				E335B1C22F5BD8B6F432320F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		DBC62BAC203C1D6900A9831A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBC62BAB203C1D6900A9831A /* Listko.app */,
+				DBC62BAB203C1D6900A9831A /* Listko.dev.app */,
 				DBC62BBF203C1D6900A9831A /* ListkoTests.xctest */,
 			);
 			name = Products;
@@ -77,12 +293,16 @@
 		DBC62BAD203C1D6900A9831A /* Listko */ = {
 			isa = PBXGroup;
 			children = (
-				DBC62BAE203C1D6900A9831A /* AppDelegate.swift */,
-				DBC62BB0203C1D6900A9831A /* ViewController.swift */,
-				DBC62BB2203C1D6900A9831A /* Main.storyboard */,
-				DBC62BB5203C1D6900A9831A /* Assets.xcassets */,
-				DBC62BB7203C1D6900A9831A /* LaunchScreen.storyboard */,
-				DBC62BBA203C1D6900A9831A /* Info.plist */,
+				DBC62BCE203C1D7000A9831A /* Scenes */,
+				DB1DBD3B20459AFA0029C3A3 /* Controllers */,
+				DB1DC4E22046CB040029C3A3 /* Model */,
+				DB1DBD4020459C8E0029C3A3 /* Workers */,
+				DB1DC4E92046DAD30029C3A3 /* Style */,
+				DB1DBD6E2046B1290029C3A3 /* Network */,
+				DB1DBD712046B2660029C3A3 /* Util */,
+				DB1DBD742046B3200029C3A3 /* App */,
+				DB1DBD3C20459B1C0029C3A3 /* Storyboard */,
+				DB1DBD3D20459BA70029C3A3 /* Resources */,
 			);
 			path = Listko;
 			sourceTree = "<group>";
@@ -90,10 +310,62 @@
 		DBC62BC2203C1D6900A9831A /* ListkoTests */ = {
 			isa = PBXGroup;
 			children = (
+				DBC62BDC203C1DC900A9831A /* Scenes */,
 				DBC62BC3203C1D6900A9831A /* ListkoTests.swift */,
 				DBC62BC5203C1D6900A9831A /* Info.plist */,
 			);
 			path = ListkoTests;
+			sourceTree = "<group>";
+		};
+		DBC62BCE203C1D7000A9831A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DBC62BCF203C1D7A00A9831A /* ListItems */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DBC62BCF203C1D7A00A9831A /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				DBC62BD0203C1DC200A9831A /* ListItemsPresenter.swift */,
+				DBC62BD1203C1DC200A9831A /* ListItemsWorker.swift */,
+				DBC62BD2203C1DC200A9831A /* ListItemsRouter.swift */,
+				DBC62BD3203C1DC200A9831A /* ListItemsModels.swift */,
+				DBC62BD4203C1DC200A9831A /* ListItemsViewController.swift */,
+				DBC62BD5203C1DC200A9831A /* ListItemsInteractor.swift */,
+				DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */,
+				DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */,
+			);
+			path = ListItems;
+			sourceTree = "<group>";
+		};
+		DBC62BDC203C1DC900A9831A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DBC62BDD203C1DD100A9831A /* ListItems */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DBC62BDD203C1DD100A9831A /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				DBC62BEA203C2B2C00A9831A /* ListItemsViewControllerTests.swift */,
+				DBC62BEB203C2B2C00A9831A /* ListItemsInteractorTests.swift */,
+				DBC62BEC203C2B2C00A9831A /* ListItemsWorkerTests.swift */,
+				DBC62BED203C2B2C00A9831A /* ListItemsPresenterTests.swift */,
+			);
+			path = ListItems;
+			sourceTree = "<group>";
+		};
+		E335B1C22F5BD8B6F432320F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */,
+				244610A184783C61460B201E /* Pods_ListkoTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +375,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC62BC8203C1D6900A9831A /* Build configuration list for PBXNativeTarget "Listko" */;
 			buildPhases = (
+				802CAE87EC82C436E961F484 /* [CP] Check Pods Manifest.lock */,
 				DBC62BA7203C1D6900A9831A /* Sources */,
 				DBC62BA8203C1D6900A9831A /* Frameworks */,
 				DBC62BA9203C1D6900A9831A /* Resources */,
+				4B5B89706F241E1920B8893F /* [CP] Embed Pods Frameworks */,
+				0E2B9B6C9A52BC9B4BCB1382 /* [CP] Copy Pods Resources */,
+				DB1DC4E82046CF750029C3A3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -113,16 +389,19 @@
 			);
 			name = Listko;
 			productName = Listko;
-			productReference = DBC62BAB203C1D6900A9831A /* Listko.app */;
+			productReference = DBC62BAB203C1D6900A9831A /* Listko.dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DBC62BBE203C1D6900A9831A /* ListkoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC62BCB203C1D6900A9831A /* Build configuration list for PBXNativeTarget "ListkoTests" */;
 			buildPhases = (
+				8B26696924E625A9037B6A2E /* [CP] Check Pods Manifest.lock */,
 				DBC62BBB203C1D6900A9831A /* Sources */,
 				DBC62BBC203C1D6900A9831A /* Frameworks */,
 				DBC62BBD203C1D6900A9831A /* Resources */,
+				25735BDB9EFC21D1CFC8AC91 /* [CP] Embed Pods Frameworks */,
+				5558D4A66DCA53D6E8812848 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,7 +425,13 @@
 				TargetAttributes = {
 					DBC62BAA203C1D6900A9831A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DBC62BBE203C1D6900A9831A = {
 						CreatedOnToolsVersion = 9.2;
@@ -162,6 +447,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
 			);
 			mainGroup = DBC62BA2203C1D6900A9831A;
 			productRefGroup = DBC62BAC203C1D6900A9831A /* Products */;
@@ -180,6 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */,
+				DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */,
+				DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */,
+				DB1DBD642045A5A90029C3A3 /* GoogleService-Info.plist in Resources */,
 				DBC62BB6203C1D6900A9831A /* Assets.xcassets in Resources */,
 				DBC62BB4203C1D6900A9831A /* Main.storyboard in Resources */,
 			);
@@ -194,12 +483,190 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E2B9B6C9A52BC9B4BCB1382 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listko/Pods-Listko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25735BDB9EFC21D1CFC8AC91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B5B89706F241E1920B8893F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Listko/Pods-Listko-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-Gloss/Moya_Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/MoyaSugar/MoyaSugar.framework",
+				"${BUILT_PRODUCTS_DIR}/PPTopMostController/PPTopMostController.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RMessage/RMessage.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SharkORM/SharkORM.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaSugar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPTopMostController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMessage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SharkORM.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listko/Pods-Listko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5558D4A66DCA53D6E8812848 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802CAE87EC82C436E961F484 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Listko-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B26696924E625A9037B6A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListkoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1DC4E82046CF750029C3A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 14cfb8e86205681dd8c06066a0b712abdf7574b6 323c17e14b822e7adf02d4642547283a45a6678544875e7ed11b4f63ed19a74e";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBC62BA7203C1D6900A9831A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC62BB1203C1D6900A9831A /* ViewController.swift in Sources */,
+				DB1DBD672045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift in Sources */,
+				DB1DC4DF2046CAC30029C3A3 /* Logger.swift in Sources */,
+				DB1DBD7B2046C98E0029C3A3 /* JsonWorker.swift in Sources */,
+				DB1DC4E62046CDFE0029C3A3 /* User.swift in Sources */,
+				DB1DC4EE2046DB300029C3A3 /* DemiDarkGrayLabel.swift in Sources */,
+				DB1DC4F62046DC500029C3A3 /* ListItemsExtension.swift in Sources */,
+				DBC62BD7203C1DC200A9831A /* ListItemsWorker.swift in Sources */,
+				DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */,
+				DB1DBD762046B3460029C3A3 /* App.swift in Sources */,
+				DB1DC4DC2046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift in Sources */,
+				DB1DC4F32046DBA30029C3A3 /* RegularGrayLabel.swift in Sources */,
+				DB1DBD782046C9770029C3A3 /* MyAlamofireManager.swift in Sources */,
+				DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */,
+				DBC62BD9203C1DC200A9831A /* ListItemsModels.swift in Sources */,
+				DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */,
+				DBC62BD8203C1DC200A9831A /* ListItemsRouter.swift in Sources */,
+				DB1DC4DE2046CAC30029C3A3 /* LogEventHelper.swift in Sources */,
+				DBC62BF3203C3E5900A9831A /* ListItemsCollectionView.swift in Sources */,
+				DB1DC4E42046CCB90029C3A3 /* JsonDecodableProtocol.swift in Sources */,
+				DB1DC4E12046CB000029C3A3 /* AppError.swift in Sources */,
+				DB1DC4DD2046CAC30029C3A3 /* FirebaseEventLogger.swift in Sources */,
+				DBC62BDA203C1DC200A9831A /* ListItemsViewController.swift in Sources */,
+				DB1DC4F02046DB510029C3A3 /* ColorUtil.swift in Sources */,
+				DBC62BDB203C1DC200A9831A /* ListItemsInteractor.swift in Sources */,
+				DB1DBD6B2046AED20029C3A3 /* ListCell.swift in Sources */,
+				DB1DBD702046B15C0029C3A3 /* ListkoApi.swift in Sources */,
+				DB1DBD732046B2770029C3A3 /* Constants.swift in Sources */,
+				DBC62BD6203C1DC200A9831A /* ListItemsPresenter.swift in Sources */,
+				DB1DC4EC2046DB180029C3A3 /* DemiLabel.swift in Sources */,
+				DB1DBD7C2046C98E0029C3A3 /* MyMoyaPlugin.swift in Sources */,
 				DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +675,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC62BF0203C2B2C00A9831A /* ListItemsWorkerTests.swift in Sources */,
+				DBC62BEF203C2B2C00A9831A /* ListItemsInteractorTests.swift in Sources */,
 				DBC62BC4203C1D6900A9831A /* ListkoTests.swift in Sources */,
+				DBC62BF1203C2B2C00A9831A /* ListItemsPresenterTests.swift in Sources */,
+				DBC62BEE203C2B2C00A9831A /* ListItemsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +761,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +812,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -351,14 +822,22 @@
 		};
 		DBC62BC9203C1D6900A9831A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64406098D89864FC73B6A9A8 /* Pods-Listko.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
+				BUNDLE_ID_SUFFIX = .dev;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Listko/Listko.dev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GKT45AE6R;
+				DEVELOPMENT_TEAM = T684LWQSD3;
 				INFOPLIST_FILE = Listko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hr.davtomic.Listko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volcappno.listko${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "$(TARGET_NAME)${BUNDLE_ID_SUFFIX}";
+				SERVER_URL = "htpp://";
+				SWIFT_OBJC_BRIDGING_HEADER = "Listko/Listko-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,14 +845,21 @@
 		};
 		DBC62BCA203C1D6900A9831A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCD65A83E52DCA2BC9EB745 /* Pods-Listko.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
+				BUNDLE_ID_SUFFIX = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Listko/Listko.dev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GKT45AE6R;
+				DEVELOPMENT_TEAM = T684LWQSD3;
 				INFOPLIST_FILE = Listko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hr.davtomic.Listko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volcappno.listko${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "$(TARGET_NAME)${BUNDLE_ID_SUFFIX}";
+				SERVER_URL = "htpp://";
+				SWIFT_OBJC_BRIDGING_HEADER = "Listko/Listko-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +867,7 @@
 		};
 		DBC62BCC203C1D6900A9831A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B868D308604E3D60D516C250 /* Pods-ListkoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +885,7 @@
 		};
 		DBC62BCD203C1D6900A9831A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93E79F4CE5080D62AF628EB /* Pods-ListkoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
