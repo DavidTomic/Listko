@@ -14,6 +14,7 @@ import KeychainSwift
 class App {
 
   static let keychain = KeychainSwift()
+  static let jsonWorkerApp = JsonWorker()
   
   static var delegate: AppDelegate {
     return UIApplication.shared.delegate as! AppDelegate
@@ -25,5 +26,9 @@ class App {
   
   static var user: User {
     return User.getInstance()
+  }
+  
+  static var jsonWorker: JsonWorker {
+    return jsonWorkerApp
   }
 }

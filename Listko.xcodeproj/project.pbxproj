@@ -33,6 +33,21 @@
 		DB1DC4F32046DBA30029C3A3 /* RegularGrayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */; };
 		DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F22046DBA30029C3A3 /* RegularLabel.swift */; };
 		DB1DC4F62046DC500029C3A3 /* ListItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */; };
+		DB1DC4F82046EB010029C3A3 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4F72046EB010029C3A3 /* ColumnFlowLayout.swift */; };
+		DB1DC50420494FE30029C3A3 /* EditItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4FE20494FE30029C3A3 /* EditItemPresenter.swift */; };
+		DB1DC50520494FE30029C3A3 /* EditItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC4FF20494FE30029C3A3 /* EditItemWorker.swift */; };
+		DB1DC50620494FE30029C3A3 /* EditItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50020494FE30029C3A3 /* EditItemRouter.swift */; };
+		DB1DC50720494FE30029C3A3 /* EditItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50120494FE30029C3A3 /* EditItemModels.swift */; };
+		DB1DC50820494FE30029C3A3 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50220494FE30029C3A3 /* EditItemViewController.swift */; };
+		DB1DC50920494FE30029C3A3 /* EditItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50320494FE30029C3A3 /* EditItemInteractor.swift */; };
+		DB1DC50B2049500A0029C3A3 /* EditItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */; };
+		DB1DC50F204951C30029C3A3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */; };
+		DB44E41C2049664700A3131B /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = DB44E41B2049664700A3131B /* list.json */; };
+		DB44E41E20496D5400A3131B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E41D20496D5400A3131B /* ListItem.swift */; };
+		DB44E42020496F6600A3131B /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E41F20496F6600A3131B /* PresenterProtocol.swift */; };
+		DB44E4242049704A00A3131B /* RMessageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4222049704A00A3131B /* RMessageImpl.swift */; };
+		DB44E4252049704A00A3131B /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4232049704A00A3131B /* AlertUtil.swift */; };
+		DB44E4272049903000A3131B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4262049903000A3131B /* Person.swift */; };
 		DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BAE203C1D6900A9831A /* AppDelegate.swift */; };
 		DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BB0203C1D6900A9831A /* ParentViewController.swift */; };
 		DBC62BB4203C1D6900A9831A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC62BB2203C1D6900A9831A /* Main.storyboard */; };
@@ -97,6 +112,21 @@
 		DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularGrayLabel.swift; sourceTree = "<group>"; };
 		DB1DC4F22046DBA30029C3A3 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsExtension.swift; sourceTree = "<group>"; };
+		DB1DC4F72046EB010029C3A3 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		DB1DC4FE20494FE30029C3A3 /* EditItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemPresenter.swift; sourceTree = "<group>"; };
+		DB1DC4FF20494FE30029C3A3 /* EditItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemWorker.swift; sourceTree = "<group>"; };
+		DB1DC50020494FE30029C3A3 /* EditItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemRouter.swift; sourceTree = "<group>"; };
+		DB1DC50120494FE30029C3A3 /* EditItemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemModels.swift; sourceTree = "<group>"; };
+		DB1DC50220494FE30029C3A3 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		DB1DC50320494FE30029C3A3 /* EditItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemInteractor.swift; sourceTree = "<group>"; };
+		DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemExtension.swift; sourceTree = "<group>"; };
+		DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DB44E41B2049664700A3131B /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
+		DB44E41D20496D5400A3131B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		DB44E41F20496F6600A3131B /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		DB44E4222049704A00A3131B /* RMessageImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMessageImpl.swift; sourceTree = "<group>"; };
+		DB44E4232049704A00A3131B /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		DB44E4262049903000A3131B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DBC62BAB203C1D6900A9831A /* Listko.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listko.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC62BAE203C1D6900A9831A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC62BB0203C1D6900A9831A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +245,9 @@
 		DB1DBD712046B2660029C3A3 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				DB44E4212049703F00A3131B /* AlertUtil */,
 				DB1DC4D72046CABA0029C3A3 /* Logger */,
+				DB44E41F20496F6600A3131B /* PresenterProtocol.swift */,
 				DB1DBD722046B2770029C3A3 /* Constants.swift */,
 				DB1DC4EF2046DB510029C3A3 /* ColorUtil.swift */,
 			);
@@ -247,6 +279,8 @@
 			children = (
 				DB1DC4E02046CB000029C3A3 /* AppError.swift */,
 				DB1DC4E52046CDFE0029C3A3 /* User.swift */,
+				DB44E41D20496D5400A3131B /* ListItem.swift */,
+				DB44E4262049903000A3131B /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +288,7 @@
 		DB1DC4E92046DAD30029C3A3 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				DB1DC4F72046EB010029C3A3 /* ColumnFlowLayout.swift */,
 				DB1DC4EA2046DAF70029C3A3 /* UILabel */,
 			);
 			path = Style;
@@ -268,6 +303,45 @@
 				DB1DC4F12046DBA30029C3A3 /* RegularGrayLabel.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		DB1DC4FD20494FCD0029C3A3 /* EditItem */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC4FE20494FE30029C3A3 /* EditItemPresenter.swift */,
+				DB1DC4FF20494FE30029C3A3 /* EditItemWorker.swift */,
+				DB1DC50020494FE30029C3A3 /* EditItemRouter.swift */,
+				DB1DC50120494FE30029C3A3 /* EditItemModels.swift */,
+				DB1DC50220494FE30029C3A3 /* EditItemViewController.swift */,
+				DB1DC50320494FE30029C3A3 /* EditItemInteractor.swift */,
+				DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */,
+			);
+			path = EditItem;
+			sourceTree = "<group>";
+		};
+		DB1DC50D2049518C0029C3A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB44E41A204965F200A3131B /* json_test_files */ = {
+			isa = PBXGroup;
+			children = (
+				DB44E41B2049664700A3131B /* list.json */,
+			);
+			path = json_test_files;
+			sourceTree = "<group>";
+		};
+		DB44E4212049703F00A3131B /* AlertUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DB44E4232049704A00A3131B /* AlertUtil.swift */,
+				DB44E4222049704A00A3131B /* RMessageImpl.swift */,
+			);
+			path = AlertUtil;
 			sourceTree = "<group>";
 		};
 		DBC62BA2203C1D6900A9831A = {
@@ -294,15 +368,17 @@
 			isa = PBXGroup;
 			children = (
 				DBC62BCE203C1D7000A9831A /* Scenes */,
+				DB1DBD3C20459B1C0029C3A3 /* Storyboard */,
 				DB1DBD3B20459AFA0029C3A3 /* Controllers */,
 				DB1DC4E22046CB040029C3A3 /* Model */,
 				DB1DBD4020459C8E0029C3A3 /* Workers */,
 				DB1DC4E92046DAD30029C3A3 /* Style */,
 				DB1DBD6E2046B1290029C3A3 /* Network */,
 				DB1DBD712046B2660029C3A3 /* Util */,
+				DB1DC50D2049518C0029C3A3 /* Extensions */,
 				DB1DBD742046B3200029C3A3 /* App */,
-				DB1DBD3C20459B1C0029C3A3 /* Storyboard */,
 				DB1DBD3D20459BA70029C3A3 /* Resources */,
+				DB44E41A204965F200A3131B /* json_test_files */,
 			);
 			path = Listko;
 			sourceTree = "<group>";
@@ -320,6 +396,7 @@
 		DBC62BCE203C1D7000A9831A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DB1DC4FD20494FCD0029C3A3 /* EditItem */,
 				DBC62BCF203C1D7A00A9831A /* ListItems */,
 			);
 			path = Scenes;
@@ -465,6 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB44E41C2049664700A3131B /* list.json in Resources */,
 				DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */,
 				DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */,
 				DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */,
@@ -637,31 +715,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB44E4252049704A00A3131B /* AlertUtil.swift in Sources */,
 				DB1DBD672045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift in Sources */,
 				DB1DC4DF2046CAC30029C3A3 /* Logger.swift in Sources */,
+				DB1DC50420494FE30029C3A3 /* EditItemPresenter.swift in Sources */,
+				DB44E4242049704A00A3131B /* RMessageImpl.swift in Sources */,
 				DB1DBD7B2046C98E0029C3A3 /* JsonWorker.swift in Sources */,
 				DB1DC4E62046CDFE0029C3A3 /* User.swift in Sources */,
 				DB1DC4EE2046DB300029C3A3 /* DemiDarkGrayLabel.swift in Sources */,
 				DB1DC4F62046DC500029C3A3 /* ListItemsExtension.swift in Sources */,
+				DB44E41E20496D5400A3131B /* ListItem.swift in Sources */,
 				DBC62BD7203C1DC200A9831A /* ListItemsWorker.swift in Sources */,
+				DB1DC50820494FE30029C3A3 /* EditItemViewController.swift in Sources */,
 				DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */,
+				DB1DC50B2049500A0029C3A3 /* EditItemExtension.swift in Sources */,
 				DB1DBD762046B3460029C3A3 /* App.swift in Sources */,
+				DB44E4272049903000A3131B /* Person.swift in Sources */,
 				DB1DC4DC2046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift in Sources */,
 				DB1DC4F32046DBA30029C3A3 /* RegularGrayLabel.swift in Sources */,
+				DB1DC50720494FE30029C3A3 /* EditItemModels.swift in Sources */,
 				DB1DBD782046C9770029C3A3 /* MyAlamofireManager.swift in Sources */,
 				DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */,
 				DBC62BD9203C1DC200A9831A /* ListItemsModels.swift in Sources */,
 				DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */,
+				DB44E42020496F6600A3131B /* PresenterProtocol.swift in Sources */,
 				DBC62BD8203C1DC200A9831A /* ListItemsRouter.swift in Sources */,
 				DB1DC4DE2046CAC30029C3A3 /* LogEventHelper.swift in Sources */,
 				DBC62BF3203C3E5900A9831A /* ListItemsCollectionView.swift in Sources */,
 				DB1DC4E42046CCB90029C3A3 /* JsonDecodableProtocol.swift in Sources */,
 				DB1DC4E12046CB000029C3A3 /* AppError.swift in Sources */,
 				DB1DC4DD2046CAC30029C3A3 /* FirebaseEventLogger.swift in Sources */,
+				DB1DC50520494FE30029C3A3 /* EditItemWorker.swift in Sources */,
+				DB1DC4F82046EB010029C3A3 /* ColumnFlowLayout.swift in Sources */,
+				DB1DC50F204951C30029C3A3 /* UIColorExtension.swift in Sources */,
 				DBC62BDA203C1DC200A9831A /* ListItemsViewController.swift in Sources */,
 				DB1DC4F02046DB510029C3A3 /* ColorUtil.swift in Sources */,
 				DBC62BDB203C1DC200A9831A /* ListItemsInteractor.swift in Sources */,
 				DB1DBD6B2046AED20029C3A3 /* ListCell.swift in Sources */,
+				DB1DC50620494FE30029C3A3 /* EditItemRouter.swift in Sources */,
+				DB1DC50920494FE30029C3A3 /* EditItemInteractor.swift in Sources */,
 				DB1DBD702046B15C0029C3A3 /* ListkoApi.swift in Sources */,
 				DB1DBD732046B2770029C3A3 /* Constants.swift in Sources */,
 				DBC62BD6203C1DC200A9831A /* ListItemsPresenter.swift in Sources */,

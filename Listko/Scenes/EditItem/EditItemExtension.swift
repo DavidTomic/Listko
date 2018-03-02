@@ -1,23 +1,23 @@
 //
-//  ListItemsExtension.swift
+//  EditItemExtension.swift
 //  Listko
 //
-//  Created by David Tomic on 28/02/2018.
+//  Created by David Tomic on 02/03/2018.
 //  Copyright © 2018 Terminko. All rights reserved.
 //
 
 import UIKit
 
-extension ListItemsViewController {
+extension EditItemViewController {
   
   // MARK: Setup
   
   func setup()
   {
     let viewController = self
-    let interactor = ListItemsInteractor()
-    let presenter = ListItemsPresenter()
-    let router = ListItemsRouter()
+    let interactor = EditItemInteractor()
+    let presenter = EditItemPresenter()
+    let router = EditItemRouter()
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
@@ -35,15 +35,6 @@ extension ListItemsViewController {
       if let router = router, router.responds(to: selector) {
         router.perform(selector, with: segue)
       }
-    }
-  }
-  
-  func setupCollectionView() {
-    collectionView?.collectionViewLayout = columnLayout
-    let serviceCell = UINib(nibName: "ListCell", bundle: nil)
-    collectionView.register(serviceCell, forCellWithReuseIdentifier: "cell")
-    if #available(iOS 11.0, *) {
-      collectionView?.contentInsetAdjustmentBehavior = .always
     }
   }
   

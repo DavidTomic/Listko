@@ -49,7 +49,12 @@ class AppInitWorker: NSObject, SRKDelegate {
       UIApplication.shared.isNetworkActivityIndicatorVisible = state
     }
     plugins.append(networkActivityPlugin)
-    return MoyaSugarProvider<ListkoApi>(manager: MyAlamofireManager.sharedManager, plugins: plugins)
+    
+    #if DEBUG
+      return MoyaSugarProvider<ListkoApi>(stubClosure: MoyaProvider.delayedStub(1), manager: MyAlamofireManager.sharedManager, plugins: plugins)
+    #else
+      return MoyaSugarProvider<ListkoApi>(manager: MyAlamofireManager.sharedManager, plugins: plugins)
+    #endif
   }
   
   func initFabric() {

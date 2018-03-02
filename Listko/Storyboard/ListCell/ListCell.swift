@@ -6,4 +6,17 @@
 //  Copyright © 2018 Terminko. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ListCell: UICollectionViewCell {
+  
+  
+  @IBOutlet weak var lblTitle: DemiDarkGrayLabel!
+  @IBOutlet weak var lblSubTitle: RegularGrayLabel!
+  
+  func setup(displayItem: ListItems.Fetch.ViewModel.DisplayedListItem) {
+    lblTitle.text = displayItem.title
+    lblSubTitle.text = displayItem.subtitle
+  }
+  
+}

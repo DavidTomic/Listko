@@ -8,13 +8,15 @@
 
 import UIKit
 
-extension ListItemsViewController: UICollectionViewDataSource {
+extension ListItemsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 0
+    return displayItems.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ListCell
+    let displayItem = displayItems[indexPath.row]
+    cell.setup(displayItem: displayItem)
     return cell
   }
 }

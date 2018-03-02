@@ -13,27 +13,30 @@ import MoyaSugar
 import Alamofire
 
 enum ListkoApi {
-  case getLists()
+  case getList()
+  case sendList()
 }
 
 extension ListkoApi : SugarTargetType, AccessTokenAuthorizable {
   var route: Route {
     switch self {
-    case .getLists():
+    case .getList():
+      return .get("lists")
+    case .sendList():
       return .get("lists")
     }
   }
   
   var parameters: MoyaSugar.Parameters? {
     switch self {
-      case .getLists():
+      case .getList, .sendList:
       return nil
     }
   }
   
   var authorizationType: AuthorizationType {
     switch self {
-      case .getLists:
+      case .getList:
       return .basic
     default:
       return .none
@@ -45,6 +48,15 @@ extension ListkoApi : SugarTargetType, AccessTokenAuthorizable {
   }
   
   var sampleData: Data {
+    switch self {
+    case .getList:
+      if let url = Bundle.main.url(forResource: "list", withExtension: "json"),
+        let data = try? Data(contentsOf: url) {
+        return data
+      }
+    default:
+      return Data()
+    }
     return Data()
   }
   

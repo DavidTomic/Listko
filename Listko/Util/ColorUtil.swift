@@ -10,4 +10,7 @@ import UIKit
 
 class ColorUtil {
   
+  static var defaultColor: UIColor {
+    return UIColor(red: 63, green: 163, blue: 63)
+  }
 }

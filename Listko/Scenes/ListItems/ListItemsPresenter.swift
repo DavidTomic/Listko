@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol ListItemsPresentationLogic
+protocol ListItemsPresentationLogic: PresenterProtocol
 {
   func presentListItems(response: ListItems.Fetch.Response)
 }
@@ -23,7 +23,12 @@ class ListItemsPresenter: ListItemsPresentationLogic
   
   func presentListItems(response: ListItems.Fetch.Response)
   {
-    let viewModel = ListItems.Fetch.ViewModel()
+    var displayItems: [ListItems.Fetch.ViewModel.DisplayedListItem] = []
+    for listItem in response.listItems {
+      let dli = ListItems.Fetch.ViewModel.DisplayedListItem(title: "Konzum", subtitle: "Mrkva, kruh, mlijeko")
+      displayItems.append(dli)
+    }
+    let viewModel = ListItems.Fetch.ViewModel(displayedListItem: displayItems)
     viewController?.displayListItems(viewModel: viewModel)
   }
 }

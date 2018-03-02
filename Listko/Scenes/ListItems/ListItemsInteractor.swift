@@ -26,11 +26,14 @@ class ListItemsInteractor: ListItemsBusinessLogic, ListItemsDataStore
 {
   var presenter: ListItemsPresentationLogic?
   var worker = ListItemsWorker()
-
   
   func fetchListItems(request: ListItems.Fetch.Request)
   {
-    let response = ListItems.Fetch.Response()
-    presenter?.presentListItems(response: response)
+    worker.fetchListItems(success: { (listItems) in
+      let response = ListItems.Fetch.Response(listItems: listItems)
+      self.presenter?.presentListItems(response: response)
+    }) { (error) in
+      self.presenter?.presentError(error: error)
+    }
   }
 }

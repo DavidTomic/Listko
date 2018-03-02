@@ -1,0 +1,31 @@
+[{
+	"title": "Konzum",
+	"items": [{
+		"id": 234,
+		"name": "mrkva"
+	}, {
+		"id": 234234,
+		"name": "kruh"
+	}, {
+		"id": 23424,
+		"name": "mlijeko"
+	}]
+}, {
+	"title": "Mala kupnja",
+	"items": [{
+		"id": 21235,
+		"name": "mrkva"
+	}, {
+		"id": 8676,
+		"name": "kruh"
+	}, {
+		"id": 4576,
+		"name": "mlijeko"
+	}, {
+		"id": 223444,
+		"name": "sok"
+	}, {
+		"id": 5555,
+		"name": "banane"
+	}]
+}]
