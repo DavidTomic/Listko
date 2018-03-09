@@ -16,7 +16,7 @@ enum EditItem
 {
   // MARK: Use cases
   
-  enum Something
+  enum ShowListItems
   {
     struct Request
     {
@@ -26,6 +26,10 @@ enum EditItem
     }
     struct ViewModel
     {
+      struct DisplayedListItem {
+        var name: String
+      }
+      var listItems: [DisplayedListItem]
     }
   }
 }

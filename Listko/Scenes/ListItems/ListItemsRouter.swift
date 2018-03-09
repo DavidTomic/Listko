@@ -15,6 +15,7 @@ import UIKit
 @objc protocol ListItemsRoutingLogic
 {
   func routeToEditListItem(segue: UIStoryboardSegue?)
+  func routeToShowList(segue: UIStoryboardSegue?)
 }
 
 protocol ListItemsDataPassing
@@ -34,26 +35,57 @@ class ListItemsRouter: NSObject, ListItemsRoutingLogic, ListItemsDataPassing
     if let segue = segue {
       let destinationVC = segue.destination as! EditItemViewController
       var destinationDS = destinationVC.router!.dataStore!
-      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+      passDataToEditList(source: dataStore!, destination: &destinationDS)
     } else {
       let storyboard = UIStoryboard(name: "Main", bundle: nil)
       let destinationVC = storyboard.instantiateViewController(withIdentifier: "EditItemViewController") as! EditItemViewController
       var destinationDS = destinationVC.router!.dataStore!
-      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-      navigateToSomewhere(source: viewController!, destination: destinationVC)
+      passDataToEditList(source: dataStore!, destination: &destinationDS)
+      navigateToEditList(source: viewController!, destination: destinationVC)
+    }
+  }
+  
+  func routeToShowList(segue: UIStoryboardSegue?)
+  {
+    if let segue = segue {
+//      let destinationNVC = segue.destination as! UINavigationController
+//      destinationNVC.transitioningDelegate = viewController
+//      let destinationVC = destinationNVC.topViewController as! ShowListViewController
+      
+      let destinationVC = segue.destination as! ShowListViewController
+      destinationVC.transitioningDelegate = viewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToShowList(source: dataStore!, destination: &destinationDS)
+    } else {
+//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//      let destinationVC = storyboard.instantiateViewController(withIdentifier: "ShowListViewController") as! ShowListViewController
+//      destinationVC.transitioningDelegate = viewController
+//      var destinationDS = destinationVC.router!.dataStore!
+//      passDataToShowList(source: dataStore!, destination: &destinationDS)
+//      navigateToShowList(source: viewController!, destination: destinationVC)
     }
   }
 
   // MARK: Navigation
   
-  func navigateToSomewhere(source: ListItemsViewController, destination: EditItemViewController)
+  func navigateToEditList(source: ListItemsViewController, destination: EditItemViewController)
+  {
+    source.show(destination, sender: nil)
+  }
+  
+  func navigateToShowList(source: ListItemsViewController, destination: ShowListViewController)
   {
     source.show(destination, sender: nil)
   }
   
   // MARK: Passing data
   
-  func passDataToSomewhere(source: ListItemsDataStore, destination: inout EditItemDataStore)
+  func passDataToEditList(source: ListItemsDataStore, destination: inout EditItemDataStore)
+  {
+    //destination.name = source.name
+  }
+  
+  func passDataToShowList(source: ListItemsDataStore, destination: inout ShowListDataStore)
   {
     //destination.name = source.name
   }

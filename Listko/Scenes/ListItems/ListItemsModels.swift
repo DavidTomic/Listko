@@ -23,7 +23,7 @@ enum ListItems
     }
     struct Response
     {
-      var listItems: [ListItem]
+      var listItems: [GroceryList]
     }
     struct ViewModel
     {

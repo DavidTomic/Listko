@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ListItemsViewController {
+extension ListItemsViewController: UIViewControllerTransitioningDelegate {
   
   // MARK: Setup
   
@@ -38,13 +38,29 @@ extension ListItemsViewController {
     }
   }
   
-  func setupCollectionView() {
-    collectionView?.collectionViewLayout = columnLayout
-    let serviceCell = UINib(nibName: "ListCell", bundle: nil)
-    collectionView.register(serviceCell, forCellWithReuseIdentifier: "cell")
+  func setupTableView() {
+    let nibCell = UINib(nibName: "ListCell", bundle: nil)
+    tableView.register(nibCell, forCellReuseIdentifier: "cell")
+    tableView.setFooterFrameToZero()
+  }
+  
+  func setLargeTextStyle() {
     if #available(iOS 11.0, *) {
-      collectionView?.contentInsetAdjustmentBehavior = .always
+      navigationController?.navigationBar.largeTitleTextAttributes =
+        [NSAttributedStringKey.foregroundColor: ColorUtil.defaultColor,
+         NSAttributedStringKey.font: UIFont(name: Constants.Font.avenirDemi, size: 30)!]
     }
   }
   
+  func clearNavigationBarBackground() {
+    clearNavBarBackground()
+  }
+  
+  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return popupPresentAnimationController
+  }
+  
+  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return popupDismissAnimationController
+  }
 }

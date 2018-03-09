@@ -38,4 +38,13 @@ extension EditItemViewController {
     }
   }
   
+  func setupTableView() {
+    let nibCell = UINib(nibName: "EditCell", bundle: nil)
+    tableView.register(nibCell, forCellReuseIdentifier: "cell")
+    tableView.keyboardDismissMode = .interactive
+    
+    let dummyViewHeight = CGFloat(40)
+    tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
+    tableView.contentInset = UIEdgeInsetsMake(-dummyViewHeight, 0, 0, 0)
+  }
 }

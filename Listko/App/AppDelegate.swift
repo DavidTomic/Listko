@@ -9,6 +9,7 @@
 import UIKit
 import Moya
 import MoyaSugar
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var appVersionString = ""
   var provider: MoyaSugarProvider<ListkoApi>!
+  var realm: Realm!
   
   override init() {
     super.init()
@@ -55,8 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   // methods
   func initOnAppStart() {
     appInitWorker.initFirebase()
-    appInitWorker.initSharkORM()
     appInitWorker.initFabric()
+    appInitWorker.setCustomBackButton()
+    realm = appInitWorker.initRealm()
     appVersionString = appInitWorker.initVersionString()
     provider = appInitWorker.initNetworkProvider()
   }

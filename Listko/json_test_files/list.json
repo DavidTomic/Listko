@@ -1,4 +1,5 @@
 [{
+  "id": 123,
 	"title": "Konzum",
 	"items": [{
 		"id": 234,
@@ -11,6 +12,7 @@
 		"name": "mlijeko"
 	}]
 }, {
+  "id": 1232,
 	"title": "Mala kupnja",
 	"items": [{
 		"id": 21235,

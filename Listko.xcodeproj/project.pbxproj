@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9F4C53843FAD837EE3C0A32E /* Pods_ListkoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244610A184783C61460B201E /* Pods_ListkoTests.framework */; };
+		DB129AE120512373005FD5E9 /* ShowListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129ADB20512373005FD5E9 /* ShowListPresenter.swift */; };
+		DB129AE220512373005FD5E9 /* ShowListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129ADC20512373005FD5E9 /* ShowListWorker.swift */; };
+		DB129AE320512373005FD5E9 /* ShowListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129ADD20512373005FD5E9 /* ShowListRouter.swift */; };
+		DB129AE420512373005FD5E9 /* ShowListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129ADE20512373005FD5E9 /* ShowListModels.swift */; };
+		DB129AE520512373005FD5E9 /* ShowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129ADF20512373005FD5E9 /* ShowListViewController.swift */; };
+		DB129AE620512373005FD5E9 /* ShowListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129AE020512373005FD5E9 /* ShowListInteractor.swift */; };
+		DB129AE820513ADB005FD5E9 /* PopupDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129AE720513ADB005FD5E9 /* PopupDismissAnimationController.swift */; };
+		DB129AEA20515B51005FD5E9 /* ShowListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129AE920515B51005FD5E9 /* ShowListExtension.swift */; };
+		DB129AEC2052B9CF005FD5E9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB129AEB2052B9CF005FD5E9 /* UITableViewExtension.swift */; };
 		DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DBD4120459CA40029C3A3 /* AppInitWorker.swift */; };
 		DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DBD612045A5870029C3A3 /* GoogleService-Info-dev.plist */; };
 		DB1DBD642045A5A90029C3A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DBD632045A5A90029C3A3 /* GoogleService-Info.plist */; };
@@ -43,11 +52,19 @@
 		DB1DC50B2049500A0029C3A3 /* EditItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */; };
 		DB1DC50F204951C30029C3A3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */; };
 		DB44E41C2049664700A3131B /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = DB44E41B2049664700A3131B /* list.json */; };
-		DB44E41E20496D5400A3131B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E41D20496D5400A3131B /* ListItem.swift */; };
+		DB44E41E20496D5400A3131B /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E41D20496D5400A3131B /* GroceryList.swift */; };
 		DB44E42020496F6600A3131B /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E41F20496F6600A3131B /* PresenterProtocol.swift */; };
 		DB44E4242049704A00A3131B /* RMessageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4222049704A00A3131B /* RMessageImpl.swift */; };
 		DB44E4252049704A00A3131B /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4232049704A00A3131B /* AlertUtil.swift */; };
 		DB44E4272049903000A3131B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E4262049903000A3131B /* Person.swift */; };
+		DB44E429204D23E400A3131B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E428204D23E400A3131B /* Car.swift */; };
+		DB44E42B204D718300A3131B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E42A204D718300A3131B /* ListItem.swift */; };
+		DB44E42E204D735C00A3131B /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E42D204D735C00A3131B /* EditCell.swift */; };
+		DB44E430204D736900A3131B /* EditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB44E42F204D736900A3131B /* EditCell.xib */; };
+		DB44E432204D753100A3131B /* EditItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E431204D753100A3131B /* EditItemTableView.swift */; };
+		DB44E434204E903A00A3131B /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E433204E903A00A3131B /* CloseButton.swift */; };
+		DB679DF6204FCFA500087A5F /* UITextFieldBottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB679DF5204FCFA500087A5F /* UITextFieldBottomBorder.swift */; };
+		DB679DFE20511C0300087A5F /* PopupPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB679DFD20511C0300087A5F /* PopupPresentAnimationController.swift */; };
 		DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BAE203C1D6900A9831A /* AppDelegate.swift */; };
 		DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BB0203C1D6900A9831A /* ParentViewController.swift */; };
 		DBC62BB4203C1D6900A9831A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC62BB2203C1D6900A9831A /* Main.storyboard */; };
@@ -64,7 +81,7 @@
 		DBC62BEF203C2B2C00A9831A /* ListItemsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BEB203C2B2C00A9831A /* ListItemsInteractorTests.swift */; };
 		DBC62BF0203C2B2C00A9831A /* ListItemsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BEC203C2B2C00A9831A /* ListItemsWorkerTests.swift */; };
 		DBC62BF1203C2B2C00A9831A /* ListItemsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BED203C2B2C00A9831A /* ListItemsPresenterTests.swift */; };
-		DBC62BF3203C3E5900A9831A /* ListItemsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */; };
+		DBC62BF3203C3E5900A9831A /* ListItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BF2203C3E5900A9831A /* ListItemsTableView.swift */; };
 		FA898DDF312C39E3DB9FF0F3 /* Pods_Listko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +102,15 @@
 		A93E79F4CE5080D62AF628EB /* Pods-ListkoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListkoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B868D308604E3D60D516C250 /* Pods-ListkoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListkoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListkoTests/Pods-ListkoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB129ADB20512373005FD5E9 /* ShowListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListPresenter.swift; sourceTree = "<group>"; };
+		DB129ADC20512373005FD5E9 /* ShowListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListWorker.swift; sourceTree = "<group>"; };
+		DB129ADD20512373005FD5E9 /* ShowListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListRouter.swift; sourceTree = "<group>"; };
+		DB129ADE20512373005FD5E9 /* ShowListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListModels.swift; sourceTree = "<group>"; };
+		DB129ADF20512373005FD5E9 /* ShowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListViewController.swift; sourceTree = "<group>"; };
+		DB129AE020512373005FD5E9 /* ShowListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListInteractor.swift; sourceTree = "<group>"; };
+		DB129AE720513ADB005FD5E9 /* PopupDismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDismissAnimationController.swift; sourceTree = "<group>"; };
+		DB129AE920515B51005FD5E9 /* ShowListExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListExtension.swift; sourceTree = "<group>"; };
+		DB129AEB2052B9CF005FD5E9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DB1DBD2E203EE1E40029C3A3 /* Listko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Listko-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB1DBD4120459CA40029C3A3 /* AppInitWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitWorker.swift; sourceTree = "<group>"; };
 		DB1DBD612045A5870029C3A3 /* GoogleService-Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dev.plist"; sourceTree = "<group>"; };
@@ -122,11 +148,19 @@
 		DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemExtension.swift; sourceTree = "<group>"; };
 		DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DB44E41B2049664700A3131B /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
-		DB44E41D20496D5400A3131B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		DB44E41D20496D5400A3131B /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		DB44E41F20496F6600A3131B /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		DB44E4222049704A00A3131B /* RMessageImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMessageImpl.swift; sourceTree = "<group>"; };
 		DB44E4232049704A00A3131B /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 		DB44E4262049903000A3131B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DB44E428204D23E400A3131B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		DB44E42A204D718300A3131B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		DB44E42D204D735C00A3131B /* EditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCell.swift; sourceTree = "<group>"; };
+		DB44E42F204D736900A3131B /* EditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditCell.xib; sourceTree = "<group>"; };
+		DB44E431204D753100A3131B /* EditItemTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemTableView.swift; sourceTree = "<group>"; };
+		DB44E433204E903A00A3131B /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		DB679DF5204FCFA500087A5F /* UITextFieldBottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldBottomBorder.swift; sourceTree = "<group>"; };
+		DB679DFD20511C0300087A5F /* PopupPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresentAnimationController.swift; sourceTree = "<group>"; };
 		DBC62BAB203C1D6900A9831A /* Listko.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listko.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC62BAE203C1D6900A9831A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC62BB0203C1D6900A9831A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
@@ -147,7 +181,7 @@
 		DBC62BEB203C2B2C00A9831A /* ListItemsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsInteractorTests.swift; sourceTree = "<group>"; };
 		DBC62BEC203C2B2C00A9831A /* ListItemsWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsWorkerTests.swift; sourceTree = "<group>"; };
 		DBC62BED203C2B2C00A9831A /* ListItemsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsPresenterTests.swift; sourceTree = "<group>"; };
-		DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsCollectionView.swift; sourceTree = "<group>"; };
+		DBC62BF2203C3E5900A9831A /* ListItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +215,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB129ADA20512360005FD5E9 /* ShowList */ = {
+			isa = PBXGroup;
+			children = (
+				DB129ADB20512373005FD5E9 /* ShowListPresenter.swift */,
+				DB129ADC20512373005FD5E9 /* ShowListWorker.swift */,
+				DB129ADD20512373005FD5E9 /* ShowListRouter.swift */,
+				DB129ADE20512373005FD5E9 /* ShowListModels.swift */,
+				DB129ADF20512373005FD5E9 /* ShowListViewController.swift */,
+				DB129AE020512373005FD5E9 /* ShowListInteractor.swift */,
+				DB129AE920515B51005FD5E9 /* ShowListExtension.swift */,
+			);
+			path = ShowList;
+			sourceTree = "<group>";
+		};
 		DB1DBD3B20459AFA0029C3A3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1DBD6D2046AEE60029C3A3 /* ListCell */,
+				DB44E42C204D734A00A3131B /* EditCell */,
 				DBC62BB2203C1D6900A9831A /* Main.storyboard */,
 			);
 			path = Storyboard;
@@ -224,8 +273,8 @@
 		DB1DBD6D2046AEE60029C3A3 /* ListCell */ = {
 			isa = PBXGroup;
 			children = (
-				DB1DBD682046AEB60029C3A3 /* ListCell.xib */,
 				DB1DBD6A2046AED20029C3A3 /* ListCell.swift */,
+				DB1DBD682046AEB60029C3A3 /* ListCell.xib */,
 			);
 			path = ListCell;
 			sourceTree = "<group>";
@@ -279,8 +328,10 @@
 			children = (
 				DB1DC4E02046CB000029C3A3 /* AppError.swift */,
 				DB1DC4E52046CDFE0029C3A3 /* User.swift */,
-				DB44E41D20496D5400A3131B /* ListItem.swift */,
+				DB44E41D20496D5400A3131B /* GroceryList.swift */,
+				DB44E42A204D718300A3131B /* ListItem.swift */,
 				DB44E4262049903000A3131B /* Person.swift */,
+				DB44E428204D23E400A3131B /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,8 +339,11 @@
 		DB1DC4E92046DAD30029C3A3 /* Style */ = {
 			isa = PBXGroup;
 			children = (
-				DB1DC4F72046EB010029C3A3 /* ColumnFlowLayout.swift */,
+				DB679DFA205000E700087A5F /* VCTransitions */,
+				DB679DF4204FCF8A00087A5F /* UIButton */,
+				DB679DF3204FCF8100087A5F /* UITextField */,
 				DB1DC4EA2046DAF70029C3A3 /* UILabel */,
+				DB1DC4F72046EB010029C3A3 /* ColumnFlowLayout.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -315,6 +369,7 @@
 				DB1DC50220494FE30029C3A3 /* EditItemViewController.swift */,
 				DB1DC50320494FE30029C3A3 /* EditItemInteractor.swift */,
 				DB1DC50A2049500A0029C3A3 /* EditItemExtension.swift */,
+				DB44E431204D753100A3131B /* EditItemTableView.swift */,
 			);
 			path = EditItem;
 			sourceTree = "<group>";
@@ -322,6 +377,7 @@
 		DB1DC50D2049518C0029C3A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DB129AEB2052B9CF005FD5E9 /* UITableViewExtension.swift */,
 				DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -342,6 +398,40 @@
 				DB44E4222049704A00A3131B /* RMessageImpl.swift */,
 			);
 			path = AlertUtil;
+			sourceTree = "<group>";
+		};
+		DB44E42C204D734A00A3131B /* EditCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB44E42D204D735C00A3131B /* EditCell.swift */,
+				DB44E42F204D736900A3131B /* EditCell.xib */,
+			);
+			path = EditCell;
+			sourceTree = "<group>";
+		};
+		DB679DF3204FCF8100087A5F /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				DB679DF5204FCFA500087A5F /* UITextFieldBottomBorder.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		DB679DF4204FCF8A00087A5F /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				DB44E433204E903A00A3131B /* CloseButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		DB679DFA205000E700087A5F /* VCTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				DB679DFD20511C0300087A5F /* PopupPresentAnimationController.swift */,
+				DB129AE720513ADB005FD5E9 /* PopupDismissAnimationController.swift */,
+			);
+			path = VCTransitions;
 			sourceTree = "<group>";
 		};
 		DBC62BA2203C1D6900A9831A = {
@@ -396,8 +486,9 @@
 		DBC62BCE203C1D7000A9831A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DB1DC4FD20494FCD0029C3A3 /* EditItem */,
 				DBC62BCF203C1D7A00A9831A /* ListItems */,
+				DB1DC4FD20494FCD0029C3A3 /* EditItem */,
+				DB129ADA20512360005FD5E9 /* ShowList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -411,7 +502,7 @@
 				DBC62BD3203C1DC200A9831A /* ListItemsModels.swift */,
 				DBC62BD4203C1DC200A9831A /* ListItemsViewController.swift */,
 				DBC62BD5203C1DC200A9831A /* ListItemsInteractor.swift */,
-				DBC62BF2203C3E5900A9831A /* ListItemsCollectionView.swift */,
+				DBC62BF2203C3E5900A9831A /* ListItemsTableView.swift */,
 				DB1DC4F52046DC500029C3A3 /* ListItemsExtension.swift */,
 			);
 			path = ListItems;
@@ -545,6 +636,7 @@
 				DB44E41C2049664700A3131B /* list.json in Resources */,
 				DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */,
 				DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */,
+				DB44E430204D736900A3131B /* EditCell.xib in Resources */,
 				DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */,
 				DB1DBD642045A5A90029C3A3 /* GoogleService-Info.plist in Resources */,
 				DBC62BB6203C1D6900A9831A /* Assets.xcassets in Resources */,
@@ -612,10 +704,12 @@
 				"${BUILT_PRODUCTS_DIR}/PPTopMostController/PPTopMostController.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RMessage/RMessage.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SharkORM/SharkORM.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -633,10 +727,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPTopMostController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMessage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SharkORM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,6 +811,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB129AE520512373005FD5E9 /* ShowListViewController.swift in Sources */,
 				DB44E4252049704A00A3131B /* AlertUtil.swift in Sources */,
 				DB1DBD672045A86F0029C3A3 /* PhoneNumberVerificationWorker.swift in Sources */,
 				DB1DC4DF2046CAC30029C3A3 /* Logger.swift in Sources */,
@@ -723,25 +820,34 @@
 				DB1DBD7B2046C98E0029C3A3 /* JsonWorker.swift in Sources */,
 				DB1DC4E62046CDFE0029C3A3 /* User.swift in Sources */,
 				DB1DC4EE2046DB300029C3A3 /* DemiDarkGrayLabel.swift in Sources */,
+				DB129AE220512373005FD5E9 /* ShowListWorker.swift in Sources */,
 				DB1DC4F62046DC500029C3A3 /* ListItemsExtension.swift in Sources */,
-				DB44E41E20496D5400A3131B /* ListItem.swift in Sources */,
+				DB129AEC2052B9CF005FD5E9 /* UITableViewExtension.swift in Sources */,
+				DB44E41E20496D5400A3131B /* GroceryList.swift in Sources */,
 				DBC62BD7203C1DC200A9831A /* ListItemsWorker.swift in Sources */,
 				DB1DC50820494FE30029C3A3 /* EditItemViewController.swift in Sources */,
 				DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */,
 				DB1DC50B2049500A0029C3A3 /* EditItemExtension.swift in Sources */,
 				DB1DBD762046B3460029C3A3 /* App.swift in Sources */,
+				DB129AE420512373005FD5E9 /* ShowListModels.swift in Sources */,
+				DB44E42E204D735C00A3131B /* EditCell.swift in Sources */,
+				DB129AE820513ADB005FD5E9 /* PopupDismissAnimationController.swift in Sources */,
 				DB44E4272049903000A3131B /* Person.swift in Sources */,
 				DB1DC4DC2046CAC30029C3A3 /* CrashlyticsExceptionLogger.swift in Sources */,
 				DB1DC4F32046DBA30029C3A3 /* RegularGrayLabel.swift in Sources */,
 				DB1DC50720494FE30029C3A3 /* EditItemModels.swift in Sources */,
+				DB44E432204D753100A3131B /* EditItemTableView.swift in Sources */,
 				DB1DBD782046C9770029C3A3 /* MyAlamofireManager.swift in Sources */,
+				DB129AE320512373005FD5E9 /* ShowListRouter.swift in Sources */,
+				DB44E42B204D718300A3131B /* ListItem.swift in Sources */,
+				DB679DF6204FCFA500087A5F /* UITextFieldBottomBorder.swift in Sources */,
 				DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */,
 				DBC62BD9203C1DC200A9831A /* ListItemsModels.swift in Sources */,
 				DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */,
 				DB44E42020496F6600A3131B /* PresenterProtocol.swift in Sources */,
 				DBC62BD8203C1DC200A9831A /* ListItemsRouter.swift in Sources */,
 				DB1DC4DE2046CAC30029C3A3 /* LogEventHelper.swift in Sources */,
-				DBC62BF3203C3E5900A9831A /* ListItemsCollectionView.swift in Sources */,
+				DBC62BF3203C3E5900A9831A /* ListItemsTableView.swift in Sources */,
 				DB1DC4E42046CCB90029C3A3 /* JsonDecodableProtocol.swift in Sources */,
 				DB1DC4E12046CB000029C3A3 /* AppError.swift in Sources */,
 				DB1DC4DD2046CAC30029C3A3 /* FirebaseEventLogger.swift in Sources */,
@@ -752,11 +858,17 @@
 				DB1DC4F02046DB510029C3A3 /* ColorUtil.swift in Sources */,
 				DBC62BDB203C1DC200A9831A /* ListItemsInteractor.swift in Sources */,
 				DB1DBD6B2046AED20029C3A3 /* ListCell.swift in Sources */,
+				DB44E434204E903A00A3131B /* CloseButton.swift in Sources */,
 				DB1DC50620494FE30029C3A3 /* EditItemRouter.swift in Sources */,
+				DB679DFE20511C0300087A5F /* PopupPresentAnimationController.swift in Sources */,
 				DB1DC50920494FE30029C3A3 /* EditItemInteractor.swift in Sources */,
 				DB1DBD702046B15C0029C3A3 /* ListkoApi.swift in Sources */,
+				DB44E429204D23E400A3131B /* Car.swift in Sources */,
+				DB129AEA20515B51005FD5E9 /* ShowListExtension.swift in Sources */,
 				DB1DBD732046B2770029C3A3 /* Constants.swift in Sources */,
 				DBC62BD6203C1DC200A9831A /* ListItemsPresenter.swift in Sources */,
+				DB129AE620512373005FD5E9 /* ShowListInteractor.swift in Sources */,
+				DB129AE120512373005FD5E9 /* ShowListPresenter.swift in Sources */,
 				DB1DC4EC2046DB180029C3A3 /* DemiLabel.swift in Sources */,
 				DB1DBD7C2046C98E0029C3A3 /* MyMoyaPlugin.swift in Sources */,
 				DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */,

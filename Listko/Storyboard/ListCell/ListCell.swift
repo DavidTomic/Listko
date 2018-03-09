@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class ListCell: UICollectionViewCell {
-  
+class ListCell: SwipeTableViewCell {
   
   @IBOutlet weak var lblTitle: DemiDarkGrayLabel!
   @IBOutlet weak var lblSubTitle: RegularGrayLabel!

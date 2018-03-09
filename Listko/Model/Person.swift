@@ -7,29 +7,31 @@
 //
 
 import Foundation
-import SharkORM
 import Gloss
+import RealmSwift
 
-final class Person: SRKObject, JsonDecodableProtocol {
-  
-  @objc dynamic var itemId: NSNumber?
-  @objc dynamic var name : String?
-  
-  override init() {
-    super.init()
-  }
-  
-  init?(json: JSON) {
-    super.init()
-    guard let itemId: Int = "id" <~~ json else {
-      return nil
-    }
-    self.itemId = NSNumber(value: itemId)
-    
-    guard let name: String = "name" <~~ json else {
-      return nil
-    }
-    self.name = name
-  }
+//final class Person: Object, JsonDecodableProtocol {
+//
+//  @objc dynamic var itemId: Int = 0
+//  @objc dynamic var name: String?
+//  let cars = List<Car>()
+//
+//  override class func primaryKey() -> String? {
+//    return "itemId"
+//  }
+//
+//  convenience init?(json: JSON) {
+//    self.init()
+//
+//    guard let itemId: Int = "id" <~~ json else {
+//      return nil
+//    }
+//    self.itemId = itemId
+//
+//    guard let name: String = "name" <~~ json else {
+//      return nil
+//    }
+//    self.name = name
+//  }
+//}
 
-}

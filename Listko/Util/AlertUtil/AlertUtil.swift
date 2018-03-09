@@ -28,7 +28,7 @@ class AlertUtil {
     if let error = error {
       alertImpl.showAlert(title: error, subTitle: nil, type: .error)
     } else {
-      alertImpl.showAlert(title: "defualt_error", subTitle: "check_internet_connection", type: .error)
+      alertImpl.showAlert(title: "check_internet_connection", subTitle: nil, type: .error)
     }
   }
 }

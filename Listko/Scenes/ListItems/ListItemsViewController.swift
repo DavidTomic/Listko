@@ -11,7 +11,7 @@
 //
 
 import UIKit
-import SharkORM
+import SwipeCellKit
 
 protocol ListItemsDisplayLogic: class
 {
@@ -23,17 +23,21 @@ class ListItemsViewController: ParentViewController, ListItemsDisplayLogic
   var interactor: ListItemsBusinessLogic?
   var router: (NSObjectProtocol & ListItemsRoutingLogic & ListItemsDataPassing)?
   
-  let columnLayout = ColumnFlowLayout(
-    cellsPerRow: 1,
-    cellHeight: 70,
-    minimumInteritemSpacing: 10,
-    minimumLineSpacing: 20,
-    sectionInset: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-  )
+  let popupPresentAnimationController = PopupPresentAnimationController()
+  let popupDismissAnimationController = PopupDismissAnimationController()
 
+  var swipeOptions = SwipeTableOptions()
+//{
+//    var options = SwipeTableOptions()
+//    options.transitionStyle = .border
+//    options.buttonSpacing = 4
+//    options.backgroundColor = #colorLiteral(red: 0.9467939734, green: 0.9468161464, blue: 0.9468042254, alpha: 1)
+//    return options
+//  }
+  
   var displayItems: [ListItems.Fetch.ViewModel.DisplayedListItem] = []
   
-  @IBOutlet weak var collectionView: UICollectionView!
+  @IBOutlet weak var tableView: UITableView!
   
   // MARK: Object lifecycle
   
@@ -54,31 +58,61 @@ class ListItemsViewController: ParentViewController, ListItemsDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    setupCollectionView()
+    setupTableView()
     setLargeTextStyle()
     clearNavigationBarBackground()
     fetchListItems()
-    
-    
+    //self.navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "back")
+    //self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back")
 //    // test
 //    let p = Person()
-//    p.name = "fsdf"
-//    p.itemId = 3
-//    p.commit()
+//    p.name = "pero"
+//    p.itemId = 33
+//
+//    let c1 = Car()
+//    c1.itemId = 44
+//    c1.name = "golf2"
+//
+//    let c2 = Car()
+//    c2.itemId = 55
+//    c2.name = "opel3"
+//
+//    p.cars.append(c1)
+//    p.cars.append(c2)
+//
+//
+//    try! App.realm.write {
+//      App.realm.add(p)
+//    }
     
     
-    let listItem = ListItem()
-    listItem.title = "Title Test"
-
-    let item = ListItem.Item()
-    //item.itemId = 2
-    item.name = "item test"
-    listItem.items = [item]
+//    let res = App.realm.objects(Person.self)
+//    print("res \(res)")
+//
+//    print("res \(res[0].cars[0].name)")
     
-    listItem.commit()
     
-    let results : SRKResultSet = ListItem.query().fetch()
-    print("results \(results)")
+    
+//        try! App.realm.write {
+//          App.realm.deleteAll()
+//        }
+    
+    
+    
+    
+    
+//    let listItem = ListItem()
+//    listItem.title = "Title Test"
+//
+//    let item = ListItem.Item()
+//    //item.itemId = 2
+//    item.name = "item test"
+//    listItem.items = [item]
+//
+//    listItem.commit()
+//
+//    let results : SRKResultSet = ListItem.query().fetch()
+//    print("results \(results)")
   }
   
   // MARK: Actions
@@ -89,18 +123,6 @@ class ListItemsViewController: ParentViewController, ListItemsDisplayLogic
   
   
   // MARK: Methods
-  
-  private func setLargeTextStyle() {
-    if #available(iOS 11.0, *) {
-      navigationController?.navigationBar.largeTitleTextAttributes =
-        [NSAttributedStringKey.foregroundColor: ColorUtil.defaultColor,
-         NSAttributedStringKey.font: UIFont(name: Constants.Font.avenirDemi, size: 30)!]
-    }
-  }
-  
-  private func clearNavigationBarBackground() {
-    clearNavBarBackground()
-  }
   
   private func fetchListItems()
   {
@@ -114,6 +136,6 @@ class ListItemsViewController: ParentViewController, ListItemsDisplayLogic
   func displayListItems(viewModel: ListItems.Fetch.ViewModel)
   {
     displayItems = viewModel.displayedListItem
-    collectionView.reloadData()
+    tableView.reloadData()
   }
 }

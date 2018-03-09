@@ -14,7 +14,7 @@ import UIKit
 
 protocol EditItemDisplayLogic: class
 {
-  func displaySomething(viewModel: EditItem.Something.ViewModel)
+  func displayListItems(viewModel: EditItem.ShowListItems.ViewModel)
 }
 
 class EditItemViewController: UIViewController, EditItemDisplayLogic
@@ -22,6 +22,12 @@ class EditItemViewController: UIViewController, EditItemDisplayLogic
   var interactor: EditItemBusinessLogic?
   var router: (NSObjectProtocol & EditItemRoutingLogic & EditItemDataPassing)?
 
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var consToolbarBottom: NSLayoutConstraint!
+  
+  var sections: [String] = []
+  var displayItems = [String : [EditItem.ShowListItems.ViewModel.DisplayedListItem]]()
+  
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -41,7 +47,21 @@ class EditItemViewController: UIViewController, EditItemDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    setupTableView()
+    disableLargeTitle()
+    self.tableView.isEditing = true
+    createNewList()
+    showListItems()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    setKeyboardNotifications()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    NotificationCenter.default.removeObserver(self)
   }
   
   private func disableLargeTitle() {
@@ -50,18 +70,61 @@ class EditItemViewController: UIViewController, EditItemDisplayLogic
     }
   }
   
-  // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething()
-  {
-    let request = EditItem.Something.Request()
-    interactor?.doSomething(request: request)
+  private func setKeyboardNotifications() {
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear(_:)),
+                                           name: Notification.Name.UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(_:)),
+                                           name: Notification.Name.UIKeyboardWillShow, object: nil)
   }
   
-  func displaySomething(viewModel: EditItem.Something.ViewModel)
+  @objc func keyboardWillAppear(_ notification: NSNotification) {
+    moveToolbar(notification: notification)
+  }
+  
+  @objc func keyboardWillDisappear(_ notification: NSNotification) {
+    removeTableViewFooter()
+    
+    let info = notification.userInfo!
+    let duration = info[UIKeyboardAnimationDurationUserInfoKey] as! Double
+    
+    UIView.animate(withDuration: duration) {
+      self.consToolbarBottom.constant = 0
+      self.view.layoutIfNeeded()
+    }
+  }
+  
+  private func moveToolbar(notification: NSNotification) {
+    let info = notification.userInfo!
+    let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+    let duration = info[UIKeyboardAnimationDurationUserInfoKey] as! Double
+
+    let toolbarHeight: CGFloat = 50
+    let padding: CGFloat = 50
+    addTableViewFooter(height: keyboardFrame.size.height + toolbarHeight + padding)
+    
+    UIView.animate(withDuration: duration) {
+      self.consToolbarBottom.constant = keyboardFrame.size.height
+      self.view.layoutIfNeeded()
+    }
+  }
+  
+  func showListItems()
   {
-    //nameTextField.text = viewModel.name
+    let request = EditItem.ShowListItems.Request()
+    interactor?.showListItems(request: request)
+  }
+  
+  func createNewList() {
+    sections.append("Ostalo")
+    sections.append("Ostalo")
+    let initListItem = EditItem.ShowListItems.ViewModel.DisplayedListItem(name: "")
+    displayItems[sections[0]] = [initListItem, initListItem]
+    displayItems[sections[1]] = [initListItem, initListItem]
+    tableView.reloadData()
+  }
+  
+  func displayListItems(viewModel: EditItem.ShowListItems.ViewModel)
+  {
+    
   }
 }

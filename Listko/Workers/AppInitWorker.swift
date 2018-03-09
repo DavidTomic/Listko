@@ -7,17 +7,12 @@
 //
 
 import Foundation
-import SharkORM
 import Firebase
 import Moya
 import MoyaSugar
+import RealmSwift
 
-class AppInitWorker: NSObject, SRKDelegate {
-  
-  func initSharkORM() {
-    SharkORM.setDelegate(self)
-    SharkORM.openDatabaseNamed("listko_db")
-  }
+class AppInitWorker: NSObject {
   
   func initFirebase() {
     var filePath: String!
@@ -61,4 +56,18 @@ class AppInitWorker: NSObject, SRKDelegate {
     Fabric.with([Crashlytics.self])
   }
   
+  func initRealm() -> Realm {
+    return try! Realm()
+  }
+  
+  func setCustomBackButton() {
+    let navigationBarAppearace = UINavigationBar.appearance()
+    let barButtonAppearace = UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self])
+    
+    let backImage = #imageLiteral(resourceName: "back")
+    navigationBarAppearace.backIndicatorImage = backImage
+    navigationBarAppearace.backIndicatorTransitionMaskImage = backImage
+    
+    barButtonAppearace.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -7), for: .default)
+  }
 }

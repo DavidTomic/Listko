@@ -14,18 +14,20 @@ import UIKit
 
 protocol EditItemPresentationLogic
 {
-  func presentSomething(response: EditItem.Something.Response)
+  func presentListItems(response: EditItem.ShowListItems.Response)
 }
 
 class EditItemPresenter: EditItemPresentationLogic
 {
   weak var viewController: EditItemDisplayLogic?
   
-  // MARK: Do something
-  
-  func presentSomething(response: EditItem.Something.Response)
+  func presentListItems(response: EditItem.ShowListItems.Response)
   {
-    let viewModel = EditItem.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+    var listItems: [EditItem.ShowListItems.ViewModel.DisplayedListItem] = []
+    
+    
+    
+    let viewModel = EditItem.ShowListItems.ViewModel(listItems: listItems)
+    viewController?.displayListItems(viewModel: viewModel)
   }
 }

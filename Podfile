@@ -6,7 +6,6 @@ target 'Listko' do
   use_frameworks!
 
   # Pods for Listko
-  pod 'SharkORM', '~> 2.1'
   pod 'Firebase', '~> 4.9'
   pod 'FirebaseAuth', '~> 4.4'
   pod 'FirebaseMessaging', '~> 2.0'
@@ -20,6 +19,8 @@ target 'Listko' do
   pod 'SnapKit', '~> 4.0'
   pod 'Fabric', '~> 1.7'
   pod 'Crashlytics', '~> 3.9'
+  pod 'RealmSwift'
+  pod 'SwipeCellKit', '~> 2.0'
 
   target 'ListkoTests' do
     inherit! :search_paths

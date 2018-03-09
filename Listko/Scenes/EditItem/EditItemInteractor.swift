@@ -14,7 +14,7 @@ import UIKit
 
 protocol EditItemBusinessLogic
 {
-  func doSomething(request: EditItem.Something.Request)
+  func showListItems(request: EditItem.ShowListItems.Request)
 }
 
 protocol EditItemDataStore
@@ -25,17 +25,11 @@ protocol EditItemDataStore
 class EditItemInteractor: EditItemBusinessLogic, EditItemDataStore
 {
   var presenter: EditItemPresentationLogic?
-  var worker: EditItemWorker?
-  //var name: String = ""
+  var worker = EditItemWorker()
   
-  // MARK: Do something
-  
-  func doSomething(request: EditItem.Something.Request)
+  func showListItems(request: EditItem.ShowListItems.Request)
   {
-    worker = EditItemWorker()
-    worker?.doSomeWork()
-    
-    let response = EditItem.Something.Response()
-    presenter?.presentSomething(response: response)
+    let response = EditItem.ShowListItems.Response()
+    presenter?.presentListItems(response: response)
   }
 }

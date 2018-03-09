@@ -23,7 +23,7 @@ extension ListkoApi : SugarTargetType, AccessTokenAuthorizable {
     case .getList():
       return .get("lists")
     case .sendList():
-      return .get("lists")
+      return .post("lists")
     }
   }
   

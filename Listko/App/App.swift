@@ -10,6 +10,7 @@ import UIKit
 import Moya
 import MoyaSugar
 import KeychainSwift
+import RealmSwift
 
 class App {
 
@@ -30,5 +31,9 @@ class App {
   
   static var jsonWorker: JsonWorker {
     return jsonWorkerApp
+  }
+  
+  static var realm: Realm {
+    return delegate.realm
   }
 }

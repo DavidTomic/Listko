@@ -14,7 +14,7 @@ import UIKit
 
 class ListItemsWorker
 {
-  func fetchListItems(success: @escaping ([ListItem]) -> (), failure: @escaping (AppError) -> ())
+  func fetchListItems(success: @escaping ([GroceryList]) -> (), failure: @escaping (AppError) -> ())
   {
     App.rest.request(.getList()) { (result) in
       App.jsonWorker.handleJsonArray(result: result, success: success, failure: failure)
