@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBC62BAA203C1D6900A9831A"
-               BuildableName = "Listko.app"
+               BuildableName = "Listko.dev.app"
                BlueprintName = "Listko"
                ReferencedContainer = "container:Listko.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBC62BAA203C1D6900A9831A"
-            BuildableName = "Listko.app"
+            BuildableName = "Listko.dev.app"
             BlueprintName = "Listko"
             ReferencedContainer = "container:Listko.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBC62BAA203C1D6900A9831A"
-            BuildableName = "Listko.app"
+            BuildableName = "Listko.dev.app"
             BlueprintName = "Listko"
             ReferencedContainer = "container:Listko.xcodeproj">
          </BuildableReference>
@@ -87,7 +87,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBC62BAA203C1D6900A9831A"
-            BuildableName = "Listko.app"
+            BuildableName = "Listko.dev.app"
             BlueprintName = "Listko"
             ReferencedContainer = "container:Listko.xcodeproj">
          </BuildableReference>

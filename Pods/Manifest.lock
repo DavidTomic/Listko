@@ -74,6 +74,12 @@ PODS:
   - RMessage (2.2.1):
     - HexColors (~> 4.0)
     - PPTopMostController
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.8.1):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - RxSwift (4.1.2)
   - SnapKit (4.0.0)
   - SVProgressHUD (2.2.5)
   - SwipeCellKit (2.0.1)
@@ -91,6 +97,7 @@ DEPENDENCIES:
   - MoyaSugar (~> 1.1)
   - RealmSwift
   - RMessage (from `https://github.com/donileo/RMessage.git`, branch `develop`)
+  - RxKeyboard (~> 0.8)
   - SnapKit (~> 4.0)
   - SVProgressHUD (~> 2.2.1)
   - SwipeCellKit (~> 2.0)
@@ -131,10 +138,13 @@ SPEC CHECKSUMS:
   RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RMessage: 37b1ab9d92ec1ffbafbbbdfc6f10c9524829c4e6
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxKeyboard: 28d984440671becc75350b1dfae7ae08d31076df
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwipeCellKit: 76888d93d1843dc568fdf38fff21b15dbbcf6b28
 
-PODFILE CHECKSUM: bb0cedbd0e2c1d106084b0f4fc647310464e7aca
+PODFILE CHECKSUM: 3b03f764716165c41a57e5672787afa781bb9deb
 
 COCOAPODS: 1.4.0

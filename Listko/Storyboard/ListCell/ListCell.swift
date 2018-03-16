@@ -14,7 +14,7 @@ class ListCell: SwipeTableViewCell {
   @IBOutlet weak var lblTitle: DemiDarkGrayLabel!
   @IBOutlet weak var lblSubTitle: RegularGrayLabel!
   
-  func setup(displayItem: ListItems.Fetch.ViewModel.DisplayedListItem) {
+  func setup(displayItem: ListGrocery.Fetch.ViewModel.DisplayedListGrocery) {
     lblTitle.text = displayItem.title
     lblSubTitle.text = displayItem.subtitle
   }

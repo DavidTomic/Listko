@@ -25,7 +25,7 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
   var indexPath: IndexPath!
   weak var delegate: EditCellProtocol?
   
-  func setup(displayItem: EditItem.ShowListItems.ViewModel.DisplayedListItem) {
+  func setup(displayItem: EditGrocery.DisplayedListItem) {
     tfItem.text = displayItem.name
   }
   

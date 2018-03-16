@@ -23,8 +23,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-SD-i89" customClass="UITextFieldBottomBorder" customModule="Listko" customModuleProvider="target">
-                        <rect key="frame" x="5" y="22.5" width="350" height="25"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="naziv" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-SD-i89" customClass="UITextFieldBottomBorder" customModule="Listko" customModuleProvider="target">
+                        <rect key="frame" x="5" y="22.5" width="255" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="CTY-tW-qW4"/>
                         </constraints>
@@ -40,11 +40,51 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="kom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5t-aq-qZQ" customClass="UITextFieldBottomBorder" customModule="Listko" customModuleProvider="target">
+                        <rect key="frame" x="270" y="22" width="30" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="UtB-p0-Re6"/>
+                            <constraint firstAttribute="width" constant="30" id="Yp1-xG-g3Z"/>
+                        </constraints>
+                        <color key="textColor" white="0.33000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="kn" textAlignment="natural" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="tkG-K5-evz" customClass="UITextFieldBottomBorder" customModule="Listko" customModuleProvider="target">
+                        <rect key="frame" x="310" y="22" width="45" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="maK-NT-RrZ"/>
+                            <constraint firstAttribute="height" constant="25" id="tKc-x7-NNq"/>
+                        </constraints>
+                        <color key="textColor" white="0.33000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="uzk-SD-i89" firstAttribute="centerY" secondItem="NRo-86-mZo" secondAttribute="centerY" id="9Ge-HL-SFl"/>
-                    <constraint firstAttribute="trailing" secondItem="uzk-SD-i89" secondAttribute="trailing" constant="20" id="fXu-2A-haq"/>
+                    <constraint firstItem="M5t-aq-qZQ" firstAttribute="leading" secondItem="uzk-SD-i89" secondAttribute="trailing" constant="10" id="AsA-Vt-auv"/>
+                    <constraint firstItem="M5t-aq-qZQ" firstAttribute="centerY" secondItem="uzk-SD-i89" secondAttribute="centerY" id="coG-QM-WKK"/>
                     <constraint firstItem="uzk-SD-i89" firstAttribute="leading" secondItem="NRo-86-mZo" secondAttribute="leading" constant="5" id="fqv-NE-8PE"/>
+                    <constraint firstItem="tkG-K5-evz" firstAttribute="leading" secondItem="M5t-aq-qZQ" secondAttribute="trailing" constant="10" id="go2-pj-lr7"/>
+                    <constraint firstAttribute="trailing" secondItem="tkG-K5-evz" secondAttribute="trailing" constant="20" id="orH-rc-oce"/>
+                    <constraint firstItem="tkG-K5-evz" firstAttribute="centerY" secondItem="M5t-aq-qZQ" secondAttribute="centerY" id="yCC-jh-JaS"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
