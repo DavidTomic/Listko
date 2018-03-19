@@ -24,9 +24,13 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
   var interactor: EditGroceryBusinessLogic?
   var router: (NSObjectProtocol & EditGroceryRoutingLogic & EditGroceryDataPassing)?
 
+  // MARK: IBOutlet
+  
   @IBOutlet weak var tfGroceryName: UITextField!
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var consToolbarBottom: NSLayoutConstraint!
+  
+  // MARK: Variables
   
   var sections: [String] = []
   var displayedItems = [String : [EditGrocery.DisplayedListItem]]()

@@ -44,6 +44,15 @@ PODS:
   - HexColors (4.0.0)
   - IQKeyboardManagerSwift (5.0.7)
   - KeychainSwift (9.0.2)
+  - L10n-swift (5.1.0):
+    - L10n-swift/Core (= 5.1.0)
+    - L10n-swift/Extension (= 5.1.0)
+    - L10n-swift/IBInspectable (= 5.1.0)
+  - L10n-swift/Core (5.1.0)
+  - L10n-swift/Extension (5.1.0):
+    - L10n-swift/Core
+  - L10n-swift/IBInspectable (5.1.0):
+    - L10n-swift/Core
   - Moya (10.0.2):
     - Moya/Core (= 10.0.2)
   - Moya-Gloss (3.0.0):
@@ -92,6 +101,7 @@ DEPENDENCIES:
   - FirebaseMessaging (~> 2.0)
   - IQKeyboardManagerSwift (~> 5.0)
   - KeychainSwift (~> 9.0.2)
+  - L10n-swift (~> 5.1)
   - Moya (~> 10.0)
   - Moya-Gloss (~> 3.0)
   - MoyaSugar (~> 1.1)
@@ -128,6 +138,7 @@ SPEC CHECKSUMS:
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   KeychainSwift: 3ab1d428d0dbff59cd056f1d0bfc640b36c2b081
+  L10n-swift: 9b419297c2b3c1bc7496cb3379308f441d91325d
   Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
   Moya-Gloss: d39b3efacd3ee8f08485f62bc46306b2157e82b4
   MoyaSugar: b64e677454f1a4b3745e1c5b16e1c9d1b109d04f
@@ -145,6 +156,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwipeCellKit: 76888d93d1843dc568fdf38fff21b15dbbcf6b28
 
-PODFILE CHECKSUM: 3b03f764716165c41a57e5672787afa781bb9deb
+PODFILE CHECKSUM: 942b03ecb6af77dd897ab0bb35fbeb2e049a7c18
 
 COCOAPODS: 1.4.0

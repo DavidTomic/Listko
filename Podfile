@@ -25,6 +25,7 @@ target 'Listko' do
   pod 'RealmSwift'
   pod 'SwipeCellKit', '~> 2.0'
   pod 'RxKeyboard', '~> 0.8'
+  pod 'L10n-swift', '~> 5.1'
 
   target 'ListkoTests' do
     inherit! :search_paths

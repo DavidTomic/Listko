@@ -19,14 +19,13 @@ protocol ShowGroceryBusinessLogic
 
 protocol ShowGroceryDataStore
 {
-  //var name: String { get set }
+
 }
 
 class ShowGroceryInteractor: ShowGroceryBusinessLogic, ShowGroceryDataStore
 {
   var presenter: ShowGroceryPresentationLogic?
   var worker: ShowGroceryWorker?
-  //var name: String = ""
   
   // MARK: Do something
   

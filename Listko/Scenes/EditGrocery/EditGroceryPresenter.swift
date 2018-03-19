@@ -26,21 +26,16 @@ class EditGroceryPresenter: EditGroceryPresentationLogic
     var sections: [String] = []
     var displayedItems = [String : [EditGrocery.DisplayedListItem]]()
     
-    let listCategories = groceryList.listCategories
-    for listCategory in listCategories {
+    for listCategory in groceryList.listCategories {
+      // Add List Categories
       let section = listCategory.name
-      sections.append(listCategory.name)
-      let listItems = listCategory.listItems
-      for listItem in listItems {
-        if displayedItems[section] == nil {
-          var listItemArray: [EditGrocery.DisplayedListItem] = []
-          let displayedItem = EditGrocery.DisplayedListItem(name: listItem.name ?? "")
-          listItemArray.append(displayedItem)
-          displayedItems[section] = listItemArray
-        } else {
-          let displayedItem = EditGrocery.DisplayedListItem(name: listItem.name ?? "")
-          displayedItems[section]!.append(displayedItem)
-        }
+      sections.append(section)
+      
+      // Add List Items
+      for listItem in listCategory.listItems {
+        addListItem(displayedItems: &displayedItems,
+                    section: section,
+                    listItem: listItem)
       }
     }
     
@@ -48,5 +43,17 @@ class EditGroceryPresenter: EditGroceryPresentationLogic
                                                displayedListItems: displayedItems,
                                                sections: sections)
     viewController?.displayEditedGrocery(viewModel: viewModel)
+  }
+  
+  private func addListItem(displayedItems: inout [String : [EditGrocery.DisplayedListItem]], section: String, listItem: ListItem) {
+    if displayedItems[section] == nil {
+      var listItemArray: [EditGrocery.DisplayedListItem] = []
+      let displayedItem = EditGrocery.DisplayedListItem(name: listItem.name ?? "")
+      listItemArray.append(displayedItem)
+      displayedItems[section] = listItemArray
+    } else {
+      let displayedItem = EditGrocery.DisplayedListItem(name: listItem.name ?? "")
+      displayedItems[section]!.append(displayedItem)
+    }
   }
 }

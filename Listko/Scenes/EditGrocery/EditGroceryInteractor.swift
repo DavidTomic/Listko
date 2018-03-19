@@ -38,15 +38,17 @@ class EditGroceryInteractor: EditGroceryBusinessLogic, EditGroceryDataStore
       presenter?.presentGroceryListToEdit(response: response)
     } else {
       groceryList = GroceryList()
-      let listCategory = ListCategory()
-      groceryList?.listCategories.append(listCategory)
-      let listItem = ListItem()
-      listCategory.listItems.append(listItem)
-      
+      addDefaultCategoryAndItemToGroceryList(groceryList: groceryList!)
       let response = EditGrocery.Edit.Response(groceryList: groceryList!)
       presenter?.presentGroceryListToEdit(response: response)
     }
   }
   
+  private func addDefaultCategoryAndItemToGroceryList(groceryList: GroceryList) {
+    let listCategory = ListCategory()
+    groceryList.listCategories.append(listCategory)
+    let listItem = ListItem()
+    listCategory.listItems.append(listItem)
+  }
   
 }
