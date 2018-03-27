@@ -97,5 +97,12 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
     displayedItems = viewModel.displayedListItems
     tableView.reloadData()
   }
+  
+  // MARK: Edit Grocery list
+  
+  func saveGroceryList() {
+    let request = EditGrocery.Save.Request()
+    interactor?.saveGroceryList(request: request)
+  }
 
 }

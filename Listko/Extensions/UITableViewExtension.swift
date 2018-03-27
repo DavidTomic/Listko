@@ -9,9 +9,9 @@
 import UIKit
 
 extension UITableView {
-    
-    func setFooterFrameToZero() {
-        tableFooterView = UIView(frame: CGRect.zero)
-    }
-    
+  
+  func setFooterFrameToZero() {
+    tableFooterView = UIView(frame: CGRect.zero)
+  }
+  
 }

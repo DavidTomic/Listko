@@ -57,7 +57,13 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="nto-X4-DYt"/>
                         <barButtonItem key="rightBarButtonItem" title="Opcije" id="Kcp-tY-uxT">
                             <color key="tintColor" red="0.2470588235" green="0.63921568630000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="l10nTitle" value="options"/>
+                            </userDefinedRuntimeAttributes>
                         </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="l10nTitle" value="groceryList"/>
+                        </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="agr-8W-dsg" id="lLU-RU-1f5"/>
@@ -160,6 +166,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.2470588235" green="0.63921568630000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="l10nText" value="title"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Upisi naziv liste" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hH5-aV-R44">
                                 <rect key="frame" x="73.5" y="74" width="286.5" height="40"/>
@@ -204,6 +213,9 @@
                                         <state key="normal" title="Izaberi">
                                             <color key="titleColor" red="0.2470588235" green="0.63921568630000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="l10nTitle" value="choose"/>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN6-4H-MHA">
                                         <rect key="frame" x="325" y="0.0" width="50" height="50"/>
@@ -263,7 +275,11 @@
                         <viewLayoutGuide key="safeArea" id="ETN-Fo-dkL"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="NCD-Ia-lRF">
-                        <barButtonItem key="rightBarButtonItem" title="Spremi" id="g4f-Fe-r6n"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="g4f-Fe-r6n">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="l10nTitle" value="save"/>
+                            </userDefinedRuntimeAttributes>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="consToolbarBottom" destination="R1D-wv-DhP" id="2hn-PR-Oca"/>

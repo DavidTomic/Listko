@@ -55,10 +55,16 @@ class EditGroceryViewControllerTests: XCTestCase
   class EditGroceryBusinessLogicSpy: EditGroceryBusinessLogic
   {
     var showGroceryListToEditCalled = false
+    var saveGroceryListCalled = false
     
     func showGroceryListToEdit(request: EditGrocery.Edit.Request)
     {
       showGroceryListToEditCalled = true
+    }
+    
+    func saveGroceryList(request: EditGrocery.Save.Request)
+    {
+      saveGroceryListCalled = true
     }
   }
   
@@ -78,7 +84,7 @@ class EditGroceryViewControllerTests: XCTestCase
   
   // MARK: Test Edit Grocery
   
-  func testShouldShowGroceryListToEditWhenViewIsLoaded()
+  func testShouldShowGroceryList_WhenViewIsLoaded()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -91,7 +97,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertTrue(spy.showGroceryListToEditCalled, "viewDidLoad() should ask the interactor to do showGroceryListToEdit")
   }
   
-  func testDisplayEditedGroceryReloadTableView()
+  func testDisplayEditedGrocery_ShouldReloadTableView()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -108,7 +114,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssert(tableViewSpy.reloadDataCalled, "displayEditedGrocery() should reload the table view")
   }
   
-  func testDisplayEditedGroceryShowNewGroceryListCorrectly()
+  func testDisplayEditedGrocery_ShowsNewGroceryListCorrectly()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -128,7 +134,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 1, "tableview should have one row in section")
   }
   
-  func testDisplayEditedGroceryShowGroceryName()
+  func testDisplayEditedGrocery_ShowsGroceryName()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -145,7 +151,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertEqual(sut.tfGroceryName.text, "Grocery List", "tfGroceryName should have empty Grocery name")
   }
   
-  func testNumberOfSectionsEqaulNumberOfGroceryListCategoriesToDisplay()
+  func testNumberOfSections_EqaulNumberOf_GroceryListCategoriesToDisplay()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -163,7 +169,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertEqual(sut.tableView.numberOfSections, displayedListItems.count, "The number of tableview sections should equal the number of list categories to display")
   }
   
-  func testNumberOfRowsShouldEqaulNumberOfGroceryListCategoriesItemsToDisplay()
+  func testNumberOfRows_ShouldEqaulNumberOf_GroceryListCategoriesItemsToDisplay()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -181,7 +187,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), displayedListItems[sections[0]]!.count, "The number of tableview sections should equal the number of list categories to display")
   }
   
-  func testShouldConfigureTableViewCellToDisplayListItem()
+  func testShouldConfigureTableViewCell_ToDisplayListItem()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -200,5 +206,18 @@ class EditGroceryViewControllerTests: XCTestCase
     
     // Then
     XCTAssertEqual(cell.tfItem.text, "milk", "A properly configured table view cell should display the list item name")
+  }
+  
+  func testShouldCallInteractor_ToSaveGroceryList()
+  {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    sut.interactor = spy
+    
+    // When
+    sut.saveGroceryList()
+    
+    // Then
+    XCTAssertTrue(spy.saveGroceryListCalled, "saveGroceryList in VC should ask the interactor to save GroceryList")
   }
 }

@@ -38,6 +38,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <real key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="l10nPlaceholder" value="title"/>
                         </userDefinedRuntimeAttributes>
                     </textField>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="kom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5t-aq-qZQ" customClass="UITextFieldBottomBorder" customModule="Listko" customModuleProvider="target">

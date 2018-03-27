@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Listko
+
+  Created by David Tomic on 19/03/2018.
+  Copyright © 2018 Terminko. All rights reserved.
+*/
+
+// Mark: Grocery List
+"groceryList" = "Grocery List";
+"options" = "Options";
+
+// Mark: Edit Grocery List
+"save" = "Save";
+"choose" = "Choose";
+"title" = "Title";
+"rest" = "Rest";
+
+
+// MARK: Rest
+"alert_error" = "Check internet connection";

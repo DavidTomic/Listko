@@ -82,6 +82,8 @@
 		DBC62BDA203C1DC200A9831A /* ListGroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD4203C1DC200A9831A /* ListGroceryViewController.swift */; };
 		DBC62BDB203C1DC200A9831A /* ListGroceryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BD5203C1DC200A9831A /* ListGroceryInteractor.swift */; };
 		DBC62BF3203C3E5900A9831A /* ListGroceryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BF2203C3E5900A9831A /* ListGroceryTableView.swift */; };
+		DBF489C0205FF68E00381C2E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBF489C2205FF68E00381C2E /* Localizable.strings */; };
+		DBF489C5205FFB7300381C2E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF489C4205FFB7300381C2E /* StringExtension.swift */; };
 		FA898DDF312C39E3DB9FF0F3 /* Pods_Listko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0F76B7D12DE627C39D2F0 /* Pods_Listko.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +184,9 @@
 		DBC62BD4203C1DC200A9831A /* ListGroceryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroceryViewController.swift; sourceTree = "<group>"; };
 		DBC62BD5203C1DC200A9831A /* ListGroceryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroceryInteractor.swift; sourceTree = "<group>"; };
 		DBC62BF2203C3E5900A9831A /* ListGroceryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroceryTableView.swift; sourceTree = "<group>"; };
+		DBF489C1205FF68E00381C2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DBF489C3205FF68F00381C2E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DBF489C4205FFB7300381C2E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +382,7 @@
 			children = (
 				DB129AEB2052B9CF005FD5E9 /* UITableViewExtension.swift */,
 				DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */,
+				DBF489C4205FFB7300381C2E /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				DB1DC50D2049518C0029C3A3 /* Extensions */,
 				DB1DBD742046B3200029C3A3 /* App */,
 				DB1DBD3D20459BA70029C3A3 /* Resources */,
+				DBFE8C33205FF40800A70407 /* Localizable */,
 				DB44E41A204965F200A3131B /* json_test_files */,
 			);
 			path = Listko;
@@ -505,8 +512,8 @@
 			isa = PBXGroup;
 			children = (
 				DB1F7855205966E7005A5525 /* CA_questions.rtf */,
-				DBC62BCF203C1D7A00A9831A /* ListGroceries */,
 				DB1DC4FD20494FCD0029C3A3 /* EditGrocery */,
+				DBC62BCF203C1D7A00A9831A /* ListGroceries */,
 				DB129ADA20512360005FD5E9 /* ShowGrocery */,
 			);
 			path = Scenes;
@@ -533,6 +540,14 @@
 				DB1F7857205A90F3005A5525 /* Edit Grocery */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DBFE8C33205FF40800A70407 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				DBF489C2205FF68E00381C2E /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		E335B1C22F5BD8B6F432320F /* Frameworks */ = {
@@ -646,6 +661,7 @@
 				DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */,
 				DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */,
 				DB44E430204D736900A3131B /* EditCell.xib in Resources */,
+				DBF489C0205FF68E00381C2E /* Localizable.strings in Resources */,
 				DB1DBD622045A5870029C3A3 /* GoogleService-Info-dev.plist in Resources */,
 				DB1DBD642045A5A90029C3A3 /* GoogleService-Info.plist in Resources */,
 				DBC62BB6203C1D6900A9831A /* Assets.xcassets in Resources */,
@@ -860,6 +876,7 @@
 				DB679DF6204FCFA500087A5F /* UITextFieldBottomBorder.swift in Sources */,
 				DB1DC4F42046DBA30029C3A3 /* RegularLabel.swift in Sources */,
 				DBC62BD9203C1DC200A9831A /* ListGroceryModels.swift in Sources */,
+				DBF489C5205FFB7300381C2E /* StringExtension.swift in Sources */,
 				DB1DBD4220459CA40029C3A3 /* AppInitWorker.swift in Sources */,
 				DB44E42020496F6600A3131B /* PresenterProtocol.swift in Sources */,
 				DBC62BD8203C1DC200A9831A /* ListGroceryRouter.swift in Sources */,
@@ -930,6 +947,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DBF489C2205FF68E00381C2E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBF489C1205FF68E00381C2E /* en */,
+				DBF489C3205FF68F00381C2E /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -937,6 +963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -994,6 +1021,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

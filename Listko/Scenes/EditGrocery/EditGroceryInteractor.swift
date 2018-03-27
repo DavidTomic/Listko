@@ -15,6 +15,7 @@ import UIKit
 protocol EditGroceryBusinessLogic
 {
   func showGroceryListToEdit(request: EditGrocery.Edit.Request)
+  func saveGroceryList(request: EditGrocery.Save.Request)
 }
 
 protocol EditGroceryDataStore
@@ -49,6 +50,12 @@ class EditGroceryInteractor: EditGroceryBusinessLogic, EditGroceryDataStore
     groceryList.listCategories.append(listCategory)
     let listItem = ListItem()
     listCategory.listItems.append(listItem)
+  }
+  
+  // MARK: - Save Grocery
+  
+  func saveGroceryList(request: EditGrocery.Save.Request) {
+    
   }
   
 }

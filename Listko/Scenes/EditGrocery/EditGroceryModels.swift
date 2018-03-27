@@ -33,20 +33,18 @@ enum EditGrocery
     }
   }
   
-//  enum Create
-//  {
-//    struct Request
-//    {
-//    }
-//    struct Response
-//    {
-//    }
-//    struct ViewModel
-//    {
-//      var displayedListItems: [String : [DisplayedListItem]]
-//      var sections: [String]
-//    }
-//  }
+  enum Save
+  {
+    struct Request
+    {
+    }
+    struct Response
+    {
+    }
+    struct ViewModel
+    {
+    }
+  }
   
   // MARK: common
   

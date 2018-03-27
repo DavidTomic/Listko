@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Listko
+
+  Created by David Tomic on 19/03/2018.
+  Copyright © 2018 Terminko. All rights reserved.
+*/
+
+// Mark: Grocery List
+"groceryList" = "Lista za kupnju";
+"options" = "Opcije";
+
+// Mark: Edit Grocery List
+"save" = "Spremi";
+"choose" = "Izaberi";
+"title" = "Naziv";
+"rest" = "Ostalo";
+
+// MARK: Rest
+"alert_error" = "Provjerite internet vezu";

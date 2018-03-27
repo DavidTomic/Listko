@@ -14,7 +14,7 @@ class ListCategory: Object /*, JsonDecodableProtocol*/ {
   
   @objc dynamic var listCategoryId: Int = 0
   @objc dynamic var position: Int = 0
-  @objc dynamic var name: String = "Ostalo"
+  @objc dynamic var name: String = "rest".localized
   let listItems = List<ListItem>()
   
   override static func primaryKey() -> String? {
