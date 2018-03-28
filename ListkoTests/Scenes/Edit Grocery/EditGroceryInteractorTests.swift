@@ -54,7 +54,7 @@ class EditGroceryInteractorTests: XCTestCase
   
   // MARK: Test Edit Grocery
   
-  func testShowGroceryListToEdit_ShouldCreateNewGroceryList_AndPresenterToFormatIt()
+  func testShowGroceryListToEdit_ShouldCreateNewGroceryList_AndCallPresenterToFormatIt()
   {
     // Given
     let spy = EditGroceryPresentationLogicSpy()
@@ -84,7 +84,7 @@ class EditGroceryInteractorTests: XCTestCase
     XCTAssertTrue(spy.presentGroceryListToEditCalled, "showGroceryListToEdit() should ask the presenter to format exist Grocery List")
   }
   
-  func testShowGroceryListToEdit_ContainDefaultListCategory()
+  func testShowGroceryListToEdit_ContainDefaultItems()
   {
     // Given
     let spy = EditGroceryPresentationLogicSpy()
@@ -96,19 +96,6 @@ class EditGroceryInteractorTests: XCTestCase
 
     // Then
     XCTAssertEqual(sut.groceryList?.listCategories.count, 1, "Grocery List should have default List Category")
-  }
-  
-  func testShowGroceryListToEdit_ContainOneListItem_InDefaultListCategory()
-  {
-    // Given
-    let spy = EditGroceryPresentationLogicSpy()
-    sut.presenter = spy
-
-    // When
-    let request = EditGrocery.Edit.Request()
-    sut.showGroceryListToEdit(request: request)
-
-    // Then
     XCTAssertEqual(sut.groceryList?.listCategories.first?.listItems.count, 1, "default list category should have one list item")
   }
   

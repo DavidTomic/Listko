@@ -75,7 +75,7 @@ class EditGroceryPresenterTests: XCTestCase
     sut.presentGroceryListToEdit(response: response)
 
     // Then
-    XCTAssertTrue(spy.displayEditedGroceryCalled, "presentGroceryListToEdit() should ask the view controller to display the result")
+    XCTAssertTrue(spy.displayEditedGroceryCalled, "presentGroceryListToEdit() should ask the view controller to display the Grocery list")
   }
   
   func testPresentEditedGrocery_ShouldFormatGroceryName()
@@ -94,7 +94,7 @@ class EditGroceryPresenterTests: XCTestCase
     XCTAssertEqual(editGroceryDisplayLogicSpy.editGroceryViewModel.groceryName, "Shopping list", "presenter should format Grocery name")
   }
   
-  func testPresentEditedGrocery_ShouldFormatGroceryNameToNil()
+  func testPresentEditedGrocery_ShouldNOTFormatGroceryNameIfNil()
   {
     // Given
     let editGroceryDisplayLogicSpy = EditGroceryDisplayLogicSpy()
@@ -128,7 +128,7 @@ class EditGroceryPresenterTests: XCTestCase
     XCTAssertEqual(editGroceryDisplayLogicSpy.editGroceryViewModel.sections[0], "section", "presenter should format Grocery Default ListCategory")
   }
   
-  func testPresentEditedGrocery_DefaultListCategory_ShouldContainOneListItem()
+  func testPresentEditedGrocery_ShouldFormat_ListItem()
   {
     // Given
     let editGroceryDisplayLogicSpy = EditGroceryDisplayLogicSpy()
@@ -150,7 +150,7 @@ class EditGroceryPresenterTests: XCTestCase
     XCTAssertEqual(editGroceryDisplayLogicSpy.editGroceryViewModel.displayedListItems[defaultSection]!.count, 1, "default ListCategory should contain one ListItem")
   }
   
-  func testPresentEditedGroceryList_ShouldProperlyFormat_ListCategories_AndListItem()
+  func testPresentEditedGroceryList_ShouldProperlyFormat_ListCategories_AndListItems()
   {
     // Given
     let editGroceryDisplayLogicSpy = EditGroceryDisplayLogicSpy()
@@ -158,6 +158,7 @@ class EditGroceryPresenterTests: XCTestCase
     
     let listItem = ListItem()
     listItem.name = "firstItem"
+    
     let listItemSecond = ListItem()
     listItemSecond.name = "secondItem"
     

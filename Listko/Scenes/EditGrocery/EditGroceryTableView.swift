@@ -11,18 +11,6 @@ import SnapKit
 
 extension EditGroceryViewController: UITableViewDataSource, UITableViewDelegate, EditCellProtocol {
   
-  func setupTableView() {
-    let nibCell = UINib(nibName: "EditCell", bundle: nil)
-    tableView.register(nibCell, forCellReuseIdentifier: "cell")
-    tableView.keyboardDismissMode = .interactive
-    
-    let dummyViewHeight = CGFloat(40)
-    tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
-    tableView.contentInset = UIEdgeInsetsMake(-dummyViewHeight, 0, 0, 0)
-    
-    self.tableView.isEditing = true
-  }
-  
   func numberOfSections(in tableView: UITableView) -> Int {
     return sections.count
   }
@@ -38,7 +26,6 @@ extension EditGroceryViewController: UITableViewDataSource, UITableViewDelegate,
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    print("cellForRowAt \(indexPath)")
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EditCell
     cell.indexPath = indexPath
     cell.delegate = self

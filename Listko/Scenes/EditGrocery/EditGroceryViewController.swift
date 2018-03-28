@@ -11,7 +11,6 @@
 //
 
 import UIKit
-import RxKeyboard
 import RxSwift
 
 protocol EditGroceryDisplayLogic: class
@@ -34,7 +33,7 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
   
   var sections: [String] = []
   var displayedItems = [String : [EditGrocery.DisplayedListItem]]()
-  private let disposeBag = DisposeBag()
+  let disposeBag = DisposeBag() // used for Keyboard handling
   
   // MARK: Object lifecycle
   
@@ -61,28 +60,6 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
     showGroceryListToEdit()
   }
   
-  // MARK: Keyboard handling
-  
-  func addKeyboardObserver() {
-    RxKeyboard.instance.visibleHeight
-      .drive(onNext: { keyboardVisibleHeight in
-        var actualKeyboardHeight = keyboardVisibleHeight
-        if #available(iOS 11.0, *), keyboardVisibleHeight > 0 {
-          actualKeyboardHeight = actualKeyboardHeight - self.view.safeAreaInsets.bottom
-        }
-        self.consToolbarBottom.constant = actualKeyboardHeight
-        self.view.layoutIfNeeded()
-      })
-      .disposed(by: disposeBag)
-  }
-  
-  // MARK: Large title
-  
-  func disableLargeTitle() {
-    if #available(iOS 11.0, *) {
-      navigationItem.largeTitleDisplayMode = .never
-    }
-  }
 
   // MARK: Edit Grocery list
   
@@ -98,7 +75,7 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
     tableView.reloadData()
   }
   
-  // MARK: Edit Grocery list
+  // MARK: Save Grocery list
   
   func saveGroceryList() {
     let request = EditGrocery.Save.Request()

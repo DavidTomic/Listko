@@ -82,9 +82,9 @@ class EditGroceryViewControllerTests: XCTestCase
     }
   }
   
-  // MARK: Test Edit Grocery
+  // MARK: Test Display Grocery List
   
-  func testShouldShowGroceryList_WhenViewIsLoaded()
+  func testShouldViewGroceryList_WhenViewIsLoaded()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -140,18 +140,19 @@ class EditGroceryViewControllerTests: XCTestCase
     let spy = EditGroceryBusinessLogicSpy()
     sut.interactor = spy
     loadView()
-    let tableViewSpy = TableViewSpy()
-    sut.tableView = tableViewSpy
     
     // When
     let viewModel = EditGrocery.Edit.ViewModel(groceryName: "Grocery List", displayedListItems: [:], sections: [])
     sut.displayEditedGrocery(viewModel: viewModel)
     
     // Then
-    XCTAssertEqual(sut.tfGroceryName.text, "Grocery List", "tfGroceryName should have empty Grocery name")
+    XCTAssertEqual(sut.tfGroceryName.text, "Grocery List", "tfGroceryName should have Grocery name")
   }
   
-  func testNumberOfSections_EqaulNumberOf_GroceryListCategoriesToDisplay()
+  
+  // MARK: Test Table View
+  
+  func testNumberOfSectionsShouldEqaulToNumberOf_GroceryListCategoriesToDisplay()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -169,7 +170,7 @@ class EditGroceryViewControllerTests: XCTestCase
     XCTAssertEqual(sut.tableView.numberOfSections, displayedListItems.count, "The number of tableview sections should equal the number of list categories to display")
   }
   
-  func testNumberOfRows_ShouldEqaulNumberOf_GroceryListCategoriesItemsToDisplay()
+  func testNumberOfRowsShouldEqaulToNumberOf_GroceryListItemsToDisplay()
   {
     // Given
     let spy = EditGroceryBusinessLogicSpy()
@@ -184,7 +185,7 @@ class EditGroceryViewControllerTests: XCTestCase
     sut.displayEditedGrocery(viewModel: viewModel)
     
     // Then
-    XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), displayedListItems[sections[0]]!.count, "The number of tableview sections should equal the number of list categories to display")
+    XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), displayedListItems[sections[0]]!.count, "The number of tableview rows in section should equal the number of list items in list category to display")
   }
   
   func testShouldConfigureTableViewCell_ToDisplayListItem()
@@ -207,6 +208,11 @@ class EditGroceryViewControllerTests: XCTestCase
     // Then
     XCTAssertEqual(cell.tfItem.text, "milk", "A properly configured table view cell should display the list item name")
   }
+  
+  
+  
+  
+  // MARK: Test Save Grocery List
   
   func testShouldCallInteractor_ToSaveGroceryList()
   {
