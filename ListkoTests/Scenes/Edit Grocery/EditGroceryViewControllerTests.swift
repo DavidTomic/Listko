@@ -56,6 +56,7 @@ class EditGroceryViewControllerTests: XCTestCase
   {
     var showGroceryListToEditCalled = false
     var saveGroceryListCalled = false
+    var groceryList: GroceryList?
     
     func showGroceryListToEdit(request: EditGrocery.Edit.Request)
     {
@@ -226,4 +227,96 @@ class EditGroceryViewControllerTests: XCTestCase
     // Then
     XCTAssertTrue(spy.saveGroceryListCalled, "saveGroceryList in VC should ask the interactor to save GroceryList")
   }
+
+
+  // MARK: Test TextField methods
+  
+  func testTitleTFShouldShowKeyboardIfIsNewList() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = nil
+    sut.interactor = spy
+    
+    // When
+    loadView()
+    
+    // Then
+    XCTAssertTrue(sut.tfGroceryName.isFirstResponder, "tfTitle shoud show keyboard if is new list")
+  }
+  
+  func testTitleTFShouldNotShowKeyboardIfIsExistList() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = GroceryList()
+    sut.interactor = spy
+    
+    // When
+    loadView()
+    
+    // Then
+    XCTAssertFalse(sut.tfGroceryName.isFirstResponder, "tfTitle shoud NOT show keyboard is List exists")
+  }
+  
+  func testTitleTFShouldShowDoneReturnKeyIfIsNewList() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = nil
+    sut.interactor = spy
+    
+    // When
+    loadView()
+    
+    // Then
+    XCTAssertTrue(sut.tfGroceryName.returnKeyType == .next, "tfTitle shoud show return type next if list is new")
+  }
+  
+  func testTitleTFShouldShowNextReturnKeyIfIsExistList() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = GroceryList()
+    sut.interactor = spy
+    
+    // When
+    loadView()
+    
+    // Then
+    XCTAssertTrue(sut.tfGroceryName.returnKeyType == .done, "tfTitle shoud show return type done if list exists")
+  }
+  
+  func testTitleTFShouldMoveToFirstListItemIfIsNewList_AferReturnKeyAction() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = nil
+    sut.interactor = spy
+    loadView()
+    let sections = ["section1"]
+    let displayedListItem = EditGrocery.DisplayedListItem(name: "milk")
+    let displayedListItems = [sections[0]: [displayedListItem, displayedListItem, displayedListItem]]
+    sut.sections = sections
+    sut.displayedItems = displayedListItems
+    sut.tableView.reloadData()
+    let indexPath = IndexPath(row: 0, section: 0)
+    let cell = sut.tableView.cellForRow(at: indexPath) as! EditCell
+    
+    // When
+    _ = sut.textFieldShouldReturn(sut.tfGroceryName)
+    
+    // Then
+    XCTAssertTrue(cell.tfItem.isFirstResponder, "textfield of first item should have keyboard visible")
+  }
+  
+  func testTitleTFShouldDismissKeyboardIfIsExistList_AferReturnKeyAction() {
+    // Given
+    let spy = EditGroceryBusinessLogicSpy()
+    spy.groceryList = GroceryList()
+    sut.interactor = spy
+    loadView()
+    
+    // When
+    _ = sut.textFieldShouldReturn(sut.tfGroceryName)
+    
+    // Then
+    XCTAssertFalse(sut.tfGroceryName.isFirstResponder, "tfTitle should dismiss keyboard if list exists")
+  }
+  
 }

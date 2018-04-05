@@ -35,6 +35,10 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
   var displayedItems = [String : [EditGrocery.DisplayedListItem]]()
   let disposeBag = DisposeBag() // used for Keyboard handling
   
+  var isNewGroceryList: Bool {
+    return interactor?.groceryList == nil
+  }
+  
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -58,6 +62,7 @@ class EditGroceryViewController: UIViewController, EditGroceryDisplayLogic
     disableLargeTitle()
     addKeyboardObserver()
     showGroceryListToEdit()
+    showTfGroceryNameKeyboardIfIsNewGroceryList()
   }
   
 

@@ -68,6 +68,18 @@
 		DB44E430204D736900A3131B /* EditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB44E42F204D736900A3131B /* EditCell.xib */; };
 		DB44E432204D753100A3131B /* EditGroceryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E431204D753100A3131B /* EditGroceryTableView.swift */; };
 		DB44E434204E903A00A3131B /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44E433204E903A00A3131B /* CloseButton.swift */; };
+		DB5D859F2074F88A004D62C9 /* EditGroceryTextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D859E2074F88A004D62C9 /* EditGroceryTextFieldExt.swift */; };
+		DB5D85A620760281004D62C9 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A020760281004D62C9 /* SettingsPresenter.swift */; };
+		DB5D85A720760281004D62C9 /* SettingsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A120760281004D62C9 /* SettingsWorker.swift */; };
+		DB5D85A820760281004D62C9 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A220760281004D62C9 /* SettingsRouter.swift */; };
+		DB5D85A920760281004D62C9 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A320760281004D62C9 /* SettingsModels.swift */; };
+		DB5D85AA20760281004D62C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A420760281004D62C9 /* SettingsViewController.swift */; };
+		DB5D85AB20760281004D62C9 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85A520760281004D62C9 /* SettingsInteractor.swift */; };
+		DB5D85B2207602AF004D62C9 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85AE207602AE004D62C9 /* SettingsViewControllerTests.swift */; };
+		DB5D85B3207602AF004D62C9 /* SettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85AF207602AE004D62C9 /* SettingsInteractorTests.swift */; };
+		DB5D85B4207602AF004D62C9 /* SettingsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85B0207602AF004D62C9 /* SettingsWorkerTests.swift */; };
+		DB5D85B5207602AF004D62C9 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85B1207602AF004D62C9 /* SettingsPresenterTests.swift */; };
+		DB5D85B920763ADD004D62C9 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D85B820763ADD004D62C9 /* UserSettings.swift */; };
 		DB679DF6204FCFA500087A5F /* UITextFieldBottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB679DF5204FCFA500087A5F /* UITextFieldBottomBorder.swift */; };
 		DB679DFE20511C0300087A5F /* PopupPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB679DFD20511C0300087A5F /* PopupPresentAnimationController.swift */; };
 		DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62BAE203C1D6900A9831A /* AppDelegate.swift */; };
@@ -166,6 +178,18 @@
 		DB44E42F204D736900A3131B /* EditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditCell.xib; sourceTree = "<group>"; };
 		DB44E431204D753100A3131B /* EditGroceryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryTableView.swift; sourceTree = "<group>"; };
 		DB44E433204E903A00A3131B /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		DB5D859E2074F88A004D62C9 /* EditGroceryTextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryTextFieldExt.swift; sourceTree = "<group>"; };
+		DB5D85A020760281004D62C9 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		DB5D85A120760281004D62C9 /* SettingsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWorker.swift; sourceTree = "<group>"; };
+		DB5D85A220760281004D62C9 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		DB5D85A320760281004D62C9 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		DB5D85A420760281004D62C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DB5D85A520760281004D62C9 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		DB5D85AE207602AE004D62C9 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
+		DB5D85AF207602AE004D62C9 /* SettingsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorTests.swift; sourceTree = "<group>"; };
+		DB5D85B0207602AF004D62C9 /* SettingsWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWorkerTests.swift; sourceTree = "<group>"; };
+		DB5D85B1207602AF004D62C9 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
+		DB5D85B820763ADD004D62C9 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		DB679DF5204FCFA500087A5F /* UITextFieldBottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldBottomBorder.swift; sourceTree = "<group>"; };
 		DB679DFD20511C0300087A5F /* PopupPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresentAnimationController.swift; sourceTree = "<group>"; };
 		DBC62BAB203C1D6900A9831A /* Listko.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listko.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,6 +359,7 @@
 				DB26D33820592270005845DE /* Entity */,
 				DB1DC4E02046CB000029C3A3 /* AppError.swift */,
 				DB1DC4E52046CDFE0029C3A3 /* User.swift */,
+				DB5D85B820763ADD004D62C9 /* UserSettings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,6 +398,7 @@
 				DB1DC50120494FE30029C3A3 /* EditGroceryModels.swift */,
 				DB1DC50A2049500A0029C3A3 /* EditGroceryExtension.swift */,
 				DB44E431204D753100A3131B /* EditGroceryTableView.swift */,
+				DB5D859E2074F88A004D62C9 /* EditGroceryTextFieldExt.swift */,
 			);
 			path = EditGrocery;
 			sourceTree = "<group>";
@@ -432,6 +458,30 @@
 				DB44E42F204D736900A3131B /* EditCell.xib */,
 			);
 			path = EditCell;
+			sourceTree = "<group>";
+		};
+		DB5D85AC2076028E004D62C9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D85A420760281004D62C9 /* SettingsViewController.swift */,
+				DB5D85A520760281004D62C9 /* SettingsInteractor.swift */,
+				DB5D85A020760281004D62C9 /* SettingsPresenter.swift */,
+				DB5D85A120760281004D62C9 /* SettingsWorker.swift */,
+				DB5D85A220760281004D62C9 /* SettingsRouter.swift */,
+				DB5D85A320760281004D62C9 /* SettingsModels.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DB5D85AD2076029C004D62C9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D85AE207602AE004D62C9 /* SettingsViewControllerTests.swift */,
+				DB5D85AF207602AE004D62C9 /* SettingsInteractorTests.swift */,
+				DB5D85B0207602AF004D62C9 /* SettingsWorkerTests.swift */,
+				DB5D85B1207602AF004D62C9 /* SettingsPresenterTests.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		DB679DF3204FCF8100087A5F /* UITextField */ = {
@@ -515,6 +565,7 @@
 				DB1DC4FD20494FCD0029C3A3 /* EditGrocery */,
 				DBC62BCF203C1D7A00A9831A /* ListGroceries */,
 				DB129ADA20512360005FD5E9 /* ShowGrocery */,
+				DB5D85AC2076028E004D62C9 /* Settings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -537,6 +588,7 @@
 		DBC62BDC203C1DC900A9831A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DB5D85AD2076029C004D62C9 /* Settings */,
 				DB1F7857205A90F3005A5525 /* Edit Grocery */,
 			);
 			path = Scenes;
@@ -857,7 +909,9 @@
 				DB129AE220512373005FD5E9 /* ShowGroceryWorker.swift in Sources */,
 				DB1DC4F62046DC500029C3A3 /* ListGroceryExtension.swift in Sources */,
 				DB129AEC2052B9CF005FD5E9 /* UITableViewExtension.swift in Sources */,
+				DB5D859F2074F88A004D62C9 /* EditGroceryTextFieldExt.swift in Sources */,
 				DB44E41E20496D5400A3131B /* GroceryList.swift in Sources */,
+				DB5D85A820760281004D62C9 /* SettingsRouter.swift in Sources */,
 				DBC62BD7203C1DC200A9831A /* ListGroceryWorker.swift in Sources */,
 				DB1DC50820494FE30029C3A3 /* EditGroceryViewController.swift in Sources */,
 				DBC62BB1203C1D6900A9831A /* ParentViewController.swift in Sources */,
@@ -886,13 +940,16 @@
 				DB1DC4E12046CB000029C3A3 /* AppError.swift in Sources */,
 				DB1DC4DD2046CAC30029C3A3 /* FirebaseEventLogger.swift in Sources */,
 				DB1DC50520494FE30029C3A3 /* EditGroceryWorker.swift in Sources */,
+				DB5D85AB20760281004D62C9 /* SettingsInteractor.swift in Sources */,
 				DB1F785420593E02005A5525 /* ListCategory.swift in Sources */,
 				DB1DC4F82046EB010029C3A3 /* ColumnFlowLayout.swift in Sources */,
+				DB5D85A920760281004D62C9 /* SettingsModels.swift in Sources */,
 				DB1DC50F204951C30029C3A3 /* UIColorExtension.swift in Sources */,
 				DBC62BDA203C1DC200A9831A /* ListGroceryViewController.swift in Sources */,
 				DB1DC4F02046DB510029C3A3 /* ColorUtil.swift in Sources */,
 				DBC62BDB203C1DC200A9831A /* ListGroceryInteractor.swift in Sources */,
 				DB1DBD6B2046AED20029C3A3 /* ListCell.swift in Sources */,
+				DB5D85B920763ADD004D62C9 /* UserSettings.swift in Sources */,
 				DB44E434204E903A00A3131B /* CloseButton.swift in Sources */,
 				DB1DC50620494FE30029C3A3 /* EditGroceryRouter.swift in Sources */,
 				DB679DFE20511C0300087A5F /* PopupPresentAnimationController.swift in Sources */,
@@ -902,8 +959,11 @@
 				DB1DBD732046B2770029C3A3 /* Constants.swift in Sources */,
 				DBC62BD6203C1DC200A9831A /* ListGroceryPresenter.swift in Sources */,
 				DB129AE620512373005FD5E9 /* ShowGroceryInteractor.swift in Sources */,
+				DB5D85A620760281004D62C9 /* SettingsPresenter.swift in Sources */,
 				DB129AE120512373005FD5E9 /* ShowGroceryPresenter.swift in Sources */,
+				DB5D85AA20760281004D62C9 /* SettingsViewController.swift in Sources */,
 				DB1DC4EC2046DB180029C3A3 /* DemiLabel.swift in Sources */,
+				DB5D85A720760281004D62C9 /* SettingsWorker.swift in Sources */,
 				DB1DBD7C2046C98E0029C3A3 /* MyMoyaPlugin.swift in Sources */,
 				DBC62BAF203C1D6900A9831A /* AppDelegate.swift in Sources */,
 			);
@@ -913,6 +973,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5D85B2207602AF004D62C9 /* SettingsViewControllerTests.swift in Sources */,
+				DB5D85B4207602AF004D62C9 /* SettingsWorkerTests.swift in Sources */,
+				DB5D85B3207602AF004D62C9 /* SettingsInteractorTests.swift in Sources */,
+				DB5D85B5207602AF004D62C9 /* SettingsPresenterTests.swift in Sources */,
 				DB1F785E205A9107005A5525 /* EditGroceryWorkerTests.swift in Sources */,
 				DB1F785D205A9107005A5525 /* EditGroceryInteractorTests.swift in Sources */,
 				DB1F785F205A9107005A5525 /* EditGroceryPresenterTests.swift in Sources */,

@@ -92,13 +92,23 @@ class ListGroceryViewController: ParentViewController, ListGroceryDisplayLogic
     
     
     
-    let gl = GroceryList()
-    let listCategory = ListCategory()
-    gl.listCategories.append(listCategory)
-    print("gl \(gl)")
+//    let gl = GroceryList()
+//    let listCategory = ListCategory()
+//    gl.listCategories.append(listCategory)
+//    print("gl \(gl)")
+//
+//    print("gl \(gl.listCategories.first?.listItems.count)")
     
-    print("gl \(gl.listCategories.first?.listItems.count)")
-    
+    print("UserSettings.getInstance().showItemPrice \(UserSettings.getInstance().showItemPrice)")
+    UserSettings.getInstance().showItemPrice = false
+    UserSettings.getInstance().save()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    // iOS 11.2 bug
+    self.navigationController?.navigationBar.tintAdjustmentMode = .normal
+    self.navigationController?.navigationBar.tintAdjustmentMode = .automatic
   }
   
   // MARK: Actions

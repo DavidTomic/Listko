@@ -16,6 +16,7 @@ protocol EditGroceryBusinessLogic
 {
   func showGroceryListToEdit(request: EditGrocery.Edit.Request)
   func saveGroceryList(request: EditGrocery.Save.Request)
+  var groceryList: GroceryList? { get set }
 }
 
 protocol EditGroceryDataStore
