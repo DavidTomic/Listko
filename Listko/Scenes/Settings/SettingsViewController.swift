@@ -23,6 +23,7 @@ class SettingsViewController: UITableViewController, SettingsDisplayLogic
   var router: (NSObjectProtocol & SettingsRoutingLogic & SettingsDataPassing)?
 
   @IBOutlet weak var showPriceSwitch: UISwitch!
+  
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -73,12 +74,14 @@ class SettingsViewController: UITableViewController, SettingsDisplayLogic
     getItems()
   }
   
+  
   @IBAction func showPriceValueChanged(_ sender: UISwitch) {
     
   }
-  // MARK: Do something
   
-  //@IBOutlet weak var nameTextField: UITextField!
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print("didSelectRowAt")
+  }
   
   func getItems()
   {

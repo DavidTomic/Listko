@@ -52,7 +52,6 @@
 		DB1DC50B2049500A0029C3A3 /* EditGroceryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50A2049500A0029C3A3 /* EditGroceryExtension.swift */; };
 		DB1DC50F204951C30029C3A3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */; };
 		DB1F785420593E02005A5525 /* ListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F785320593E02005A5525 /* ListCategory.swift */; };
-		DB1F7856205966E7005A5525 /* CA_questions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DB1F7855205966E7005A5525 /* CA_questions.rtf */; };
 		DB1F785C205A9107005A5525 /* EditGroceryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F7858205A9107005A5525 /* EditGroceryViewControllerTests.swift */; };
 		DB1F785D205A9107005A5525 /* EditGroceryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F7859205A9107005A5525 /* EditGroceryInteractorTests.swift */; };
 		DB1F785E205A9107005A5525 /* EditGroceryWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F785A205A9107005A5525 /* EditGroceryWorkerTests.swift */; };
@@ -162,7 +161,6 @@
 		DB1DC50A2049500A0029C3A3 /* EditGroceryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryExtension.swift; sourceTree = "<group>"; };
 		DB1DC50E204951C30029C3A3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DB1F785320593E02005A5525 /* ListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategory.swift; sourceTree = "<group>"; };
-		DB1F7855205966E7005A5525 /* CA_questions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CA_questions.rtf; sourceTree = "<group>"; };
 		DB1F7858205A9107005A5525 /* EditGroceryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryViewControllerTests.swift; sourceTree = "<group>"; };
 		DB1F7859205A9107005A5525 /* EditGroceryInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryInteractorTests.swift; sourceTree = "<group>"; };
 		DB1F785A205A9107005A5525 /* EditGroceryWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryWorkerTests.swift; sourceTree = "<group>"; };
@@ -561,7 +559,6 @@
 		DBC62BCE203C1D7000A9831A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DB1F7855205966E7005A5525 /* CA_questions.rtf */,
 				DB1DC4FD20494FCD0029C3A3 /* EditGrocery */,
 				DBC62BCF203C1D7A00A9831A /* ListGroceries */,
 				DB129ADA20512360005FD5E9 /* ShowGrocery */,
@@ -663,7 +660,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Terminko;
 				TargetAttributes = {
 					DBC62BAA203C1D6900A9831A = {
@@ -708,7 +705,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1F7856205966E7005A5525 /* CA_questions.rtf in Resources */,
 				DB44E41C2049664700A3131B /* list.json in Resources */,
 				DBC62BB9203C1D6900A9831A /* LaunchScreen.storyboard in Resources */,
 				DB1DBD692046AEB70029C3A3 /* ListCell.xib in Resources */,
@@ -1038,6 +1034,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1045,6 +1042,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1096,6 +1094,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1103,6 +1102,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
